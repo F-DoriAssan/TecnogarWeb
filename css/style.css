@@ -1,0 +1,224 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*,*:before,*:after {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+
+body {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;    
+  }
+
+.header {
+    background: url(../img/portada1.jfif) no-repeat center; /*no se repita la imagen */
+    background-size: cover; /*se adapte al 100*/
+    min-height: 100vh; /*el alto completo*/
+  }
+
+  .header .navbar {
+    background-color: rgba(34, 33, 33, 0.658) !important;
+    height: 65px !important;            /* Cambia el valor del nav */
+    line-height: 30px !important;
+  }
+
+nav li {
+    margin-right: 15px;
+    margin-top: 20px;
+  }
+
+.tecnogar {
+    margin-left: 50px;
+    color: #e2e2e2 !important;
+}
+
+nav li a {
+    letter-spacing: 2px; /*Separacion de letra del nav*/
+    color: #e2e2e2; 
+  }
+
+nav div ul li a:before {
+    content : "";
+    position: absolute;
+    bottom: 5px; /*distancia de abajo*/
+    height  : 100px;
+    /*Trancicion despues del hover*/
+    width   : 0%;  /* medida de abjo */
+    border-bottom:2px solid #000000;
+    width   : 0px;  /* borde */
+    transition-duration: 0.5s;
+    transition-delay: 0.0789474s;
+    
+  }
+  
+.inicio:hover:before {
+    width   : 41px;  /* borde */
+    transition-duration: 0.5s;
+    transition-delay: 0.0789474s;
+  }
+
+.proyectos:hover:before {
+    width   : 73px;  /* borde*/
+    transition-duration: 0.5s;
+    transition-delay: 0.0789474s;
+
+  }
+.contacto:hover:before {
+    width   : 66px;  /* borde*/
+    transition-duration: 0.5s;
+    transition-delay: 0.0789474s;
+
+  }
+
+/* ESTILOS BOTÓN */
+
+.boton_portada {
+    background: rgba(102, 100, 100, 0.527) !important; /* color de fondo */
+    color: #e2e2e2 !important; /* color de fuente */
+    border: 2px solid #0000008f !important; /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px; /* redondear bordes */
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 2px;
+
+  }
+  .boton_portada:hover {
+    color: #ffffff; /* color de fuente hover */
+  }
+  .boton_portada::after {
+    content: "";
+    background: #8686969c; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  .boton_portada:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+
+  /*Imagen*/
+.contenedor {
+  padding: 1em 0;
+  float: left;
+  width: 50%;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+  
+.content {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    overflow: hidden;
+    margin-left: 100px;
+    height: 700px;
+  }
+  
+  .content .content-transcicion {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content:hover .content-overlay {
+    opacity: 1;
+  }
+  
+  .content-img {
+    width: 100%;
+    background-size: cover; /*se adapte al 100*/
+    min-height: 100vh; /*el alto completo*/
+  }
+  
+  .content-detalles {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content:hover .content-detalles {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    background-color: rgba(66, 65, 65, 0.527) ;
+  }
+  
+  .content-detalles h3 {
+    color: #ddd2d2 ;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 1.5em;
+    text-transform: uppercase;
+  }
+  
+  .content-detalles p {
+    color: #ddd2d2 ;
+    font-size: 1.2em;
+  }
+  
+.boton_img {
+    top: 80%;
+  }
+  
+
+@media screen and (max-width: 640px) {
+  .contenedor {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 600px) and (max-width: 1023px){
+  .contenedor {
+    width: 33.33333%;
+  }
+.boton_portada{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+}
+}
+
