@@ -31,8 +31,18 @@ nav li {
     margin-top: 20px;
   }
 
+/*Img nav(logo del nav)*/
+.img_nav {
+  background-image: url(../img/logo_navegador.png);
+  width: 48px;
+  height: 51px;
+  text-decoration: none;
+  background-size: 100%;
+  background-position: center;
+  margin-left: 5px;
+}
+
 .tecnogar {
-    margin-left: 50px;
     color: #e2e2e2 !important;
 }
 
@@ -48,7 +58,7 @@ nav div ul li a:before {
     height  : 100px;
     /*Trancicion despues del hover*/
     width   : 0%;  /* medida de abjo */
-    border-bottom:2px solid #000000;
+    border-bottom:2px solid #c0c0c0;
     width   : 0px;  /* borde */
     transition-duration: 0.5s;
     transition-delay: 0.0789474s;
@@ -116,7 +126,7 @@ nav div ul li a:before {
     transition: all 0.35s;
   }
 
-  /*Imagen*/
+  /*Imagen de contenedor con transicion*/
 .contenedor {
   padding: 1em 0;
   float: left;
@@ -127,15 +137,17 @@ nav div ul li a:before {
 }
 
   
-.content {
+  .content {
+    background-image: url(../img/portada1.jfif);
     position: relative;
     width: 90%;
     max-width: 400px;
     overflow: hidden;
     margin-left: 100px;
-    height: 700px;
+    height: 600px;
+    background-size: 100% 100%;
   }
-  
+    
   .content .content-transcicion {
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
@@ -202,14 +214,7 @@ nav div ul li a:before {
     top: 80%;
   }
   
-
-@media screen and (max-width: 640px) {
-  .contenedor {
-    display: block;
-    width: 100%;
-  }
-}
-
+  /*Responsive de tableta*/
 @media all and (min-width: 600px) and (max-width: 1023px){
   .contenedor {
     width: 33.33333%;
@@ -222,3 +227,16 @@ nav div ul li a:before {
 }
 }
 
+ /*Responsive de celular*/
+ @media all and (max-width: 599px)  {
+
+
+  .content {
+    display: block;
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+
+
+}
