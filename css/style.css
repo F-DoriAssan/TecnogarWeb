@@ -1,5 +1,7 @@
+/*FUENTES*/
 @import url(https://fonts.googleapis.com/css?family=Raleway);
-
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+/*Reglas universales*/
 *,*:before,*:after {
     margin: 0;
     padding: 0;
@@ -8,30 +10,36 @@
     box-sizing: border-box;
   }
 
-
+    /*ESTILO DEL BODY*/
 body {
+  background-color: #1a1a1a;
     font-size: 16px;
-    font-family: 'Raleway', sans-serif;    
+    font-family: 'Raleway', sans-serif; 
+    margin-left: 27px;
+    margin-right: 27px;   
   }
+
+
+    /*NAVEGADOR*/
 
 .header {
     background: url(../img/portada1.jfif) no-repeat center; /*no se repita la imagen */
     background-size: cover; /*se adapte al 100*/
     min-height: 100vh; /*el alto completo*/
-  }
 
+    
+  }
   .header .navbar {
-    background-color: rgba(34, 33, 33, 0.658) !important;
+    background-color: rgba(34, 33, 33, 0.541) !important;
     height: 65px !important;            /* Cambia el valor del nav */
     line-height: 30px !important;
-  }
 
+  }
 nav li {
     margin-right: 15px;
     margin-top: 20px;
   }
-
-/*Img nav(logo del nav)*/
+/*img nav(logo del nav)*/
 .img_nav {
   background-image: url(../img/logo_navegador.png);
   width: 48px;
@@ -39,18 +47,19 @@ nav li {
   text-decoration: none;
   background-size: 100%;
   background-position: center;
-  margin-left: 5px;
+  margin-left: 27px;
+  margin-right: 1px; 
 }
-
+/*tecnogar nav*/
 .tecnogar {
     color: #e2e2e2 !important;
 }
-
+/*estilo y trancisiones del nav*/
 nav li a {
     letter-spacing: 2px; /*Separacion de letra del nav*/
     color: #e2e2e2; 
+    
   }
-
 nav div ul li a:before {
     content : "";
     position: absolute;
@@ -64,29 +73,28 @@ nav div ul li a:before {
     transition-delay: 0.0789474s;
     
   }
-  
-.inicio:hover:before {
+  .inicio:hover:before {
     width   : 41px;  /* borde */
     transition-duration: 0.5s;
     transition-delay: 0.0789474s;
   }
-
-.proyectos:hover:before {
+  .proyectos:hover:before {
     width   : 73px;  /* borde*/
     transition-duration: 0.5s;
     transition-delay: 0.0789474s;
 
   }
-.contacto:hover:before {
+  .contacto:hover:before {
     width   : 66px;  /* borde*/
     transition-duration: 0.5s;
     transition-delay: 0.0789474s;
 
   }
 
-/* ESTILOS BOTÓN */
 
-.boton_portada {
+    /* ESTILOS BOTÓN */
+
+  .boton_portada {
     background: rgba(102, 100, 100, 0.527) !important; /* color de fondo */
     color: #e2e2e2 !important; /* color de fuente */
     border: 2px solid #0000008f !important; /* tamaño y color de borde */
@@ -96,8 +104,9 @@ nav div ul li a:before {
     z-index: 1;
     overflow: hidden;
     display: inline-block;
-    margin-top: 5px;
-    margin-left: 2px;
+    margin-top: 6px;
+    margin-left: 27px;
+    margin-right: 27px; 
 
   }
   .boton_portada:hover {
@@ -126,8 +135,10 @@ nav div ul li a:before {
     transition: all 0.35s;
   }
 
-  /*Imagen de contenedor con transicion*/
-.contenedor {
+
+    /*IMAGEN CON TRANSICION*/
+
+  .contenedor {
   padding: 1em 0;
   float: left;
   width: 50%;
@@ -135,19 +146,17 @@ nav div ul li a:before {
   text-align: center;
   margin-bottom: 10px;
 }
-
-  
   .content {
-    background-image: url(../img/portada1.jfif);
+    background-image: url(../img/img_contenido.jfif);
     position: relative;
-    width: 90%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 510px; /*MAX-WIDTH ACTIVADO*/
     overflow: hidden;
-    margin-left: 100px;
-    height: 600px;
+    margin-left: 109px;
+    height: 686px;
     background-size: 100% 100%;
+    margin-top: 90px;
   }
-    
   .content .content-transcicion {
     background: rgba(0, 0, 0, 0.7);
     position: absolute;
@@ -162,17 +171,14 @@ nav div ul li a:before {
     -moz-transition: all 0.4s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
   }
-  
   .content:hover .content-overlay {
     opacity: 1;
   }
-  
   .content-img {
     width: 100%;
     background-size: cover; /*se adapte al 100*/
     min-height: 100vh; /*el alto completo*/
   }
-  
   .content-detalles {
     position: absolute;
     text-align: center;
@@ -189,14 +195,12 @@ nav div ul li a:before {
     -moz-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
   }
-  
   .content:hover .content-detalles {
     top: 50%;
     left: 50%;
     opacity: 1;
     background-color: rgba(66, 65, 65, 0.527) ;
   }
-  
   .content-detalles h3 {
     color: #ddd2d2 ;
     font-weight: 500;
@@ -204,20 +208,47 @@ nav div ul li a:before {
     margin-bottom: 1.5em;
     text-transform: uppercase;
   }
-  
   .content-detalles p {
     color: #ddd2d2 ;
     font-size: 1.2em;
   }
-  
-.boton_img {
+  .boton_img {
     top: 80%;
   }
-  
+
+
+    /*PRIMER TITULO*/
+
+  .primer_titulo{
+    color: #e2e2e2;
+    font-family: 'Metamorphous', cursive;
+    font-size: 35.6032px;
+  }  
+
+
   /*Responsive de tableta*/
 @media all and (min-width: 600px) and (max-width: 1023px){
-  .contenedor {
-    width: 33.33333%;
+  .content {
+    display: block;
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+   .img__ {
+    background-image: url(../img/img_contenido.jfif);
+    width: 33.7%;
+    height: 200px;
+    background-size: cover; /*se adapte al 100*/
+    margin: 27px;
+    float: none;
+    min-height: 100vh; /*el alto completo*/
+    
+  
+   }
+   .header {
+    margin-left: 27px;
+    margin-right: 27px;
+    
   }
 .boton_portada{
     float: none;
@@ -227,9 +258,9 @@ nav div ul li a:before {
 }
 }
 
+
  /*Responsive de celular*/
  @media all and (max-width: 599px)  {
-
 
   .content {
     display: block;
@@ -237,6 +268,24 @@ nav div ul li a:before {
     height: auto;
     float: none;
   }
-
-
+   .img__ {
+    background-image: url(../img/img_contenido.jfif);
+    width: 87.7%;
+    height: 500px;
+    background-size: cover; /*se adapte al 100*/
+    margin-right: 27px;
+    float: left;
+    margin-left: 27px;
+   }
+   .header {
+    margin-left: 27px;
+    margin-right: 27px;
+    
+  }
+  .boton_portada{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+}
 }

@@ -1,0 +1,11 @@
+commit 37200a5524630575e8881bbd4be87ace797ad0c9
+Author: F-DoriAssan <f.doriass@gmail.com>
+Date:   Fri Sep 23 18:59:52 2022 -0300
+
+    Agrego icono en pestaña, agrego icono en nav, hago responsive img_1
+
+commit 2f51661896ec61b570a20b6356f39b950df23b02
+Author: F-DoriAssan <f.doriass@gmail.com>
+Date:   Fri Sep 23 15:13:18 2022 -0300
+
+    Archivos base
