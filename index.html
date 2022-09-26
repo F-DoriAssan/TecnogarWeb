@@ -17,17 +17,21 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
-<style>html {
-    min-height: 100%; 
-}
-body {
+<style>
+    html {
+        min-height: 100%;
+    }
 
-    background-color: #000000; 
-}</style>
+    body {
+
+        background-color: #000000;
+    }
+</style>
+
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="img_nav" href="http://127.0.0.1:5500/index.html?#"></a>       
+            <a class="img_nav" href="http://127.0.0.1:5500/index.html?#"></a>
             <a class="navbar-brand tecnogar" href="http://127.0.0.1:5500/index.html?#">TecnoHogar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +53,7 @@ body {
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <font size="2" color="#e2e2e2">Nosotros</font> 
+                            <font size="2" color="#e2e2e2">Nosotros</font>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Action</a>
@@ -63,27 +67,88 @@ body {
                             <font size="2" color="#e2e2e2">Contacto</font>
                         </a>
                     </li>
-                </ul>                
+                </ul>
             </div>
         </nav>
         <!--Boton de portada-->
         <div class="divisor_boton"><a href="#" class="btn btn-primary boton_portada">Contrata a un experto</a></div>
     </header>
 
-    <!--Img contendor con transicion-->
-    <div class="contenedor">
-        <div class="content">
-          <a class="href" href="#" target="_blank">
-            <div class="content-transcicion"></div>
-            <div class="content-detalles boton_img">
-              <h3 class="content-titulo">PROYECTOS</h3>
-              <p class="content-texto">Visite el apartado proyectos realizados para nuestros clientes</p>
-            </div>
-          </a>
+
+
+        <!--Primer img, titulo y contenido-->
+    <div class="div_img_primer_titulo_contenido">
+        <div class="primer_img"></div>
+
+        <div class="div_primer_titulo">
+            <p class="primer_titulo">Mi pasión y enfoque es realizar diseños modernos en hogares</p>
+            <h3 class="primer_contenido">Diseño y construyo el ambiente interior de una casa/edificio residencial o comercial mediante
+                el uso de colores, iluminación, textiles y muebles a las especificaciones de un cliente.El resultado
+                final, eso es lo que hago. Y si desea obtener más información
+                sobre cómo trabajar conmigo, conéctese conmigo hoy.</h3>
         </div>
-      </div>
-      <div class="img__"></div>
-      <p class="primer_titulo">Mi pasión y enfoque es en realizar diseños modernos en hogares</p>
+        <div class="div_btn_primer_contenido"><a href="#" class="btn btn-primary boton_portada">Mas informacion</a></div>
+    </div>
+
+
+
+    <div class="div_segundo_titulo"><p class="segundo_titulo">Todo sobre Tecnohogar.</p></div>
+        <div class="centrado">
+            <section class="cards">
+                
+                <article class="tarjeta">
+                    <div class="div_contenido_card"><p class="titulo_card">¿Quienes somos?</p>
+                            <h3 class="contenido_card"><strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam explicabo ducimus porro nihil
+                                obcaecati labore molestiae. Possimus sed aspernatur nam nostrum illo dolore, recusandae,
+                                necessitatibus aliquam voluptatibus temporibus nesciunt culpa?
+                            </strong></h3></div>
+                        <a href="#"><h3 class="btn_tarjetas">Ampliar informacion</h3></a>                   
+                </article>
+
+                <article class="tarjeta">
+                    <div class="div_contenido_card"><p class="titulo_card">Nuestro clientes</p>
+                    <h3 class="contenido_card"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam explicabo ducimus porro nihil
+                                obcaecati labore molestiae. Possimus sed aspernatur nam nostrum illo dolore, recusandae,
+                                necessitatibus aliquam voluptatibus temporibus nesciunt culpa?
+                            </strong></h3></div>
+                        <a href="#"><h3 class="btn_tarjetas">Ver nuestro clientes</h3></a>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="div_contenido_card"><p class="titulo_card">Companias</p>
+                            <h3 class="contenido_card"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam explicabo ducimus porro nihil
+                                obcaecati labore molestiae. Possimus sed aspernatur nam nostrum illo dolore, recusandae,
+                                necessitatibus aliquam voluptatibus temporibus nesciunt culpa?
+                            </strong></h3></div>
+                        <a href="#"><h3 class="btn_tarjetas">Companias que confiaron</h3></a>                            
+                </article>
+
+                <article class="tarjeta">
+                        <div class="div_contenido_card"><p class="titulo_card">Proyectos</p>
+                            <h3 class="contenido_card"><strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam explicabo ducimus porro nihil
+                                obcaecati labore molestiae. Possimus sed aspernatur nam nostrum illo dolore, recusandae,
+                                necessitatibus aliquam voluptatibus temporibus nesciunt culpa?
+                            </strong></h3></div>
+                        <a href="#"><h3 class="btn_tarjetas">Ver proyectos</h3></a>                    
+                </article>
+
+                <article class="tarjeta">                
+                    <div class="div_contenido_card"><p class="titulo_card">Trabaja con nosotros</p>
+                           <h3 class="contenido_card"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam explicabo ducimus porro nihil
+                                obcaecati labore molestiae. Possimus sed aspernatur nam nostrum illo dolore, recusandae,
+                                necessitatibus aliquam voluptatibus temporibus nesciunt culpa?
+                            </strong></h3></div>
+                        <div><a href="#"><h3 class="btn_tarjetas">Enviar curriculum</h3></a> </div>                  
+                </article>
+
+                <article class="tarjeta">
+                    <div class="div_contenido_card"><p class="titulo_card">Contacto</p>
+                            <h3 class="contenido_card"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam explicabo ducimus porro nihil
+                                obcaecati labore molestiae. Possimus sed aspernatu?
+                            </strong></h3></div>
+                        <a href="#"><h3 class="btn_tarjetas">Contactenos</h3></a>                
+            </section>
+        </div>
 </body>
 
 </html>

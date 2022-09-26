@@ -1,3 +1,9 @@
+commit e4a3d854c46ca974036049a6a7cd868527fee905
+Author: F-DoriAssan <f.doriass@gmail.com>
+Date:   Sat Sep 24 21:18:32 2022 -0300
+
+    Cambios en responsive, se agrega primer titulo sin css
+
 commit 37200a5524630575e8881bbd4be87ace797ad0c9
 Author: F-DoriAssan <f.doriass@gmail.com>
 Date:   Fri Sep 23 18:59:52 2022 -0300
