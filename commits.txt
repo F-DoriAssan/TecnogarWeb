@@ -1,3 +1,9 @@
+commit b2be635fefef3d3a87766ae0ca4838de646edcc7
+Author: F-DoriAssan <f.doriass@gmail.com>
+Date:   Mon Sep 26 19:18:27 2022 -0300
+
+    Edito primer titulo, agrego segundo titulo, agrego grilla contenido. (cambio img transicion por img fija)
+
 commit e4a3d854c46ca974036049a6a7cd868527fee905
 Author: F-DoriAssan <f.doriass@gmail.com>
 Date:   Sat Sep 24 21:18:32 2022 -0300
