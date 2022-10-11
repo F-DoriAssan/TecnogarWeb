@@ -7,15 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TecnoHogarWeb</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="ext/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="ext/popper.min.js"></script>
+    <script src="ext/bootstrap.min.js"></script>
+    <script src="ext/jquery-3.6.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Icono de pestaña-->
-    <link rel="icon" href="img/favicon_casa8 (1).png">
-
-    <script src="js/jquery-3.6.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="icon" href="img/logo_nav_1.png">
 </head>
 <style>
     html {
@@ -29,10 +28,11 @@
 </style>
 
 <body>
+<!--Header y nav-->
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="img_nav" href="http://127.0.0.1:5500/index.html?#"></a>
-            <a class="navbar-brand tecnogar" href="http://127.0.0.1:5500/index.html?#">TecnoHogar</a>
+            <a class="img_nav" href="index.html"></a>
+            <a class="navbar-brand tecnogar" href="index.html">TecnoHogar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -41,12 +41,12 @@
             <div class="collapse navbar-collapse navegador" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item active">
-                        <a class="nav-link inicio" href="http://127.0.0.1:5500/index.html?#">
+                        <a class="nav-link inicio" href="index.html">
                             <font size="2" color="#e2e2e2">Inicio</font>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link proyectos" href="#">
+                        <a class="nav-link proyectos" href="subPaginas/proyectos.html">
                             <font size="2" color="#e2e2e2">Proyectos</font>
                         </a>
                     </li>
@@ -63,210 +63,359 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link contacto" href="#">
+                        <a class="nav-link contacto" href="subPaginas/contacto.html">
                             <font size="2" color="#e2e2e2">Contacto</font>
                         </a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <!--Boton de portada-->
-        <div class="divisor_boton"><a href="#" class="btn btn-primary boton_portada">Contrata a un experto</a></div>
+<!--Boton de portada-->
+        <div class="divisor_btn"><a href="subPaginas/contacto.html" class="btn btn-primary btn_principal">Contrata a
+                un experto</a></div>
     </header>
 
-
-
-    <!--Primer img, titulo y contenido-->
-    <div class="div_img_primer_titulo_contenido">
-        <div class="primer_img"></div>
-
-        <div class="div_primer_titulo">
-            <p class="primer_titulo">Mi pasión y enfoque es realizar diseños modernos en hogares</p>
-            <h3 class="primer_contenido">Diseño y construyo el ambiente interior de una casa/edificio residencial o
-                comercial mediante
-                el uso de colores, iluminación, textiles y muebles a las especificaciones de un cliente.El resultado
-                final, eso es lo que hago. Y si desea obtener más información
-                sobre cómo trabajar conmigo, conéctese conmigo hoy.</h3>
+<!--Primera seccion(img, tit, contenido y btn)"PASION Y ENFOQUE"-->
+    <section>
+        <div class="div_img_primer_titulo_contenido">
+            <div class="primer_img">
+            </div>
+            <div class="div_primer_titulo">
+                <p class="primer_titulo">
+                    Mi pasión y enfoque es realizar diseños modernos en hogares
+                </p>
+                <h3 class="letra_contenido">
+                    Diseño y construyo el ambiente interior de una casa/edificio residencial o
+                    comercial mediante
+                    el uso de colores, iluminación, textiles y muebles a las especificaciones de un cliente.El resultado
+                    final, eso es lo que hago. Y si desea obtener más información
+                    sobre cómo trabajar conmigo, conéctese conmigo hoy.
+                </h3>
+            </div>
+            <div class="div_btn_primer_contenido">
+                <a href="subPaginas/contacto.html" class="btn btn-primary btn_principal">
+                    Mas informacion
+                </a>
+            </div>
         </div>
-        <div class="div_btn_primer_contenido"><a href="#" class="btn btn-primary boton_portada">Mas informacion</a>
+    </section>
+
+<!--Segunda seccion(tarjetas)"TODO SOBRE TECNOHOGAR"-->
+    <section>
+        <div class="div_segundo_titulo">
+            <p class="segundo_titulo">
+                Todo sobre Tecnohogar.
+            </p>
         </div>
-    </div>
+        <div class="centrado">
+            <section class="cards">
+                <article class="tarjeta">
+                    <div class="div_contenido_card">
+                        <p class="titulo_card">
+                            ¿Quienes somos?
+                        </p>
+                        <h3 class="contenido_card">
+                            <strong>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+                                explicabo ducimus porro nihil
+                                obcaecati labore molestiae. Possimus sed aspernatur nam nostrum illo dolore, recusandae,
+                                necessitatibus aliquam voluptatibus temporibus nesciunt culpa?
+                            </strong>
+                        </h3>
+                    </div>
+                    <a href="#">
+                        <h3 class="btn_tarjetas">
+                            Ampliar informacion
+                        </h3>
+                    </a>
+                </article>
+                <article class="tarjeta">
+                    <div class="div_contenido_card">
+                        <p class="titulo_card">
+                            Nuestro clientes
+                        </p>
+                        <h3 class="contenido_card">
+                            <strong>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+                                explicabo ducimus porro nihil
+                                obcaecati labore molestiae. Possimus sed aspernatur nam nostrum illo dolore, recusandae,
+                                necessitatibus aliquam voluptatibus temporibus nesciunt culpa?
+                            </strong>
+                        </h3>
+                    </div>
+                    <a href="#">
+                        <h3 class="btn_tarjetas">
+                            Ver nuestro clientes
+                        </h3>
+                    </a>
+                </article>
 
+                <article class="tarjeta">
+                    <div class="div_contenido_card">
+                        <p class="titulo_card">
+                            Companias
+                        </p>
+                        <h3 class="contenido_card">
+                            <strong>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+                                explicabo ducimus porro nihil
+                                obcaecati labore molestiae. Possimus sed aspernatur nam nostrum illo dolore, recusandae,
+                                necessitatibus aliquam voluptatibus temporibus nesciunt culpa?
+                            </strong>
+                        </h3>
+                    </div>
+                    <a href="#">
+                        <h3 class="btn_tarjetas">
+                            Companias que confiaron
+                        </h3>
+                    </a>
+                </article>
 
+                <article class="tarjeta">
+                    <div class="div_contenido_card">
+                        <p class="titulo_card">
+                            Proyectos
+                        </p>
+                        <h3 class="contenido_card">
+                            <strong>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+                                explicabo ducimus porro nihil
+                                obcaecati labore molestiae. Possimus sed aspernatur nam nostrum illo dolore, recusandae,
+                                necessitatibus aliquam voluptatibus temporibus nesciunt culpa?
+                            </strong>
+                        </h3>
+                    </div>
+                    <a href="subPaginas/proyectos.html">
+                        <h3 class="btn_tarjetas">
+                            Ver proyectos
+                        </h3>
+                    </a>
+                </article>
 
-    <div class="div_segundo_titulo">
-        <p class="segundo_titulo">Todo sobre Tecnohogar.</p>
-    </div>
-    <div class="centrado">
-        <section class="cards">
+                <article class="tarjeta">
+                    <div class="div_contenido_card">
+                        <p class="titulo_card">
+                            Trabaja con nosotros
+                        </p>
+                        <h3 class="contenido_card">
+                            <strong>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+                                explicabo ducimus porro nihil
+                                obcaecati labore molestiae. Possimus sed aspernatur nam nostrum illo dolore, recusandae,
+                                necessitatibus aliquam voluptatibus temporibus nesciunt culpa?
+                            </strong>
+                        </h3>
+                    </div>
+                    <a href="subPaginas/contacto.html">
+                        <h3 class="btn_tarjetas">
+                            Enviar curriculum
+                        </h3>
+                    </a>
+                </article>
 
-            <article class="tarjeta">
-                <div class="div_contenido_card">
-                    <p class="titulo_card">¿Quienes somos?</p>
-                    <h3 class="contenido_card"><strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-                            explicabo ducimus porro nihil
-                            obcaecati labore molestiae. Possimus sed aspernatur nam nostrum illo dolore, recusandae,
-                            necessitatibus aliquam voluptatibus temporibus nesciunt culpa?
-                        </strong></h3>
+                <article class="tarjeta">
+                    <div class="div_contenido_card">
+                        <p class="titulo_card">
+                            Contacto
+                        </p>
+                        <h3 class="contenido_card">
+                            <strong>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
+                                explicabo ducimus porro nihil
+                                obcaecati labore molestiae. Possimus sed aspernatu?
+                            </strong>
+                        </h3>
+                    </div>
+                    <a href="subPaginas/contacto.html">
+                        <h3 class="btn_tarjetas">
+                            Contactenos
+                        </h3>
+                    </a>
+            </section>
+        </div>
+    </section>
+
+<!--Tercera seccion(subTit, tit, img y btn)"PROYECTOS"-->
+    <section>
+        <div class="div_tit_subTit_principal">
+            <div class="div_subTit_principal">
+                <code class="code_subTit">
+                    ULTIMOS PROYECTOS DE TECNOHOGAR
+                </code>
+            </div>
+            <div class="div_tit_pincipal">
+                <p class="tit_pincipal">
+                    Eche un vistazo a algunos de mis últimos proyectos de Tecnohogar en los que estaba
+                    trabajando.
+                </p>
+            </div>
+        </div>
+        <div class="div_proyectos">
+            <a href="subPaginas/proyectos.html">
+                <div class="div_img_proyectos">
+                    <p class="btn_img_proyectos">
+                        Remodelacion de cocina
+                    </p>
                 </div>
-                <a href="#">
-                    <h3 class="btn_tarjetas">Ampliar informacion</h3>
-                </a>
-            </article>
+            </a>
 
-            <article class="tarjeta">
-                <div class="div_contenido_card">
-                    <p class="titulo_card">Nuestro clientes</p>
-                    <h3 class="contenido_card"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-                            explicabo ducimus porro nihil
-                            obcaecati labore molestiae. Possimus sed aspernatur nam nostrum illo dolore, recusandae,
-                            necessitatibus aliquam voluptatibus temporibus nesciunt culpa?
-                        </strong></h3>
+            <a href="subPaginas/proyectos.html">
+                <div class="div_img_proyectos img_segunda">
+                    <p class="btn_img_proyectos">
+                        Remodelacion de sala
+                    </p>
                 </div>
-                <a href="#">
-                    <h3 class="btn_tarjetas">Ver nuestro clientes</h3>
-                </a>
-            </article>
+            </a>
+        </div>
+    </section>
 
-            <article class="tarjeta">
-                <div class="div_contenido_card">
-                    <p class="titulo_card">Companias</p>
-                    <h3 class="contenido_card"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-                            explicabo ducimus porro nihil
-                            obcaecati labore molestiae. Possimus sed aspernatur nam nostrum illo dolore, recusandae,
-                            necessitatibus aliquam voluptatibus temporibus nesciunt culpa?
-                        </strong></h3>
-                </div>
-                <a href="#">
-                    <h3 class="btn_tarjetas">Companias que confiaron</h3>
-                </a>
-            </article>
+ <!--Cuarta seccion(subTit, tit y img)"PROCEDIMIENTO DE TRABAJO"-->
+    <section>
+        <div class="div_tit_subTit_principal">
+            <div class="div_subTit_principal">               
+                <code class="code_subTit">
+                    PROCEDIMIENTO DE TRABAJO
+                </code>
+            </div>
+            <div class="div_tit_pincipal">
+                <p class="tit_pincipal">
+                    Nuestro procedimiento de trabajo es simple y eficaz, en tres simples pasos
+                    renovamos tu hogar.
+                </p>
+            </div>
+        </div>
+        <div class="div_procedimientos_trabajos">
+            <div class="div_primer_procedimiento_trabajo primer_procedimiento">
+                <p class="tit_procedimiento_trabajo">
+                    Primera visita
+                </p>
+                <h3 class="contenido_procedimiento_trabajo">
+                    Visita del lugar y intercambios de ideas.
+                </h3>
+            </div>
 
-            <article class="tarjeta">
-                <div class="div_contenido_card">
-                    <p class="titulo_card">Proyectos</p>
-                    <h3 class="contenido_card"><strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-                            explicabo ducimus porro nihil
-                            obcaecati labore molestiae. Possimus sed aspernatur nam nostrum illo dolore, recusandae,
-                            necessitatibus aliquam voluptatibus temporibus nesciunt culpa?
-                        </strong></h3>
-                </div>
-                <a href="#">
-                    <h3 class="btn_tarjetas">Ver proyectos</h3>
-                </a>
-            </article>
+            <div class="div_primer_procedimiento_trabajo segundo_procedimiento">
+                <p class="tit_procedimiento_trabajo">
+                    Proyecto y acuerdo
+                </p>
+                <h3 class="contenido_procedimiento_trabajo">
+                    Armado del proyecto y acuardo del presupuesto.
+                </h3>
+            </div>
 
-            <article class="tarjeta">
-                <div class="div_contenido_card">
-                    <p class="titulo_card">Trabaja con nosotros</p>
-                    <h3 class="contenido_card"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-                            explicabo ducimus porro nihil
-                            obcaecati labore molestiae. Possimus sed aspernatur nam nostrum illo dolore, recusandae,
-                            necessitatibus aliquam voluptatibus temporibus nesciunt culpa?
-                        </strong></h3>
-                </div>
-                <div><a href="#">
-                        <h3 class="btn_tarjetas">Enviar curriculum</h3>
-                    </a> </div>
-            </article>
+            <div class="div_primer_procedimiento_trabajo tercer_procedimiento">
+                <p class="tit_procedimiento_trabajo">
+                    Mano de obra
+                </p>
+                <h3 class="contenido_procedimiento_trabajo">
+                    Empezamos a remodelar el sector.
+                </h3>
+            </div>
+        </div>
+    </section>
 
-            <article class="tarjeta">
-                <div class="div_contenido_card">
-                    <p class="titulo_card">Contacto</p>
-                    <h3 class="contenido_card"><strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-                            explicabo ducimus porro nihil
-                            obcaecati labore molestiae. Possimus sed aspernatu?
-                        </strong></h3>
+ <!--Quinta seccion(subTit, tit, img y btn)"CUENTA INSTAGRAM"-->
+    <section>
+        <div class="div_tit_subTit_principal tit_instagram">
+            <div class="div_subTit_principal ">
+                    <code class="code_subTit">
+                         Mi cuenta de instagram
+                    </code>
                 </div>
-                <a href="#">
-                    <h3 class="btn_tarjetas">Contactenos</h3>
-                </a>
+                <div class="div_tit_pincipal">
+                    <p class="tit_pincipal">
+                        Visite mi cuenta personal de instagram para saber mas de nosotros.
+                    </p>
+            </div>
+        </div>
+        <div class="div_procedimientos_trabajos contenedor_instagram">
+            <div class="div_img_instagram">
+                <div class="img_instagram">
+                    <a href="#">
+                        <img src="img/img_bebe.jpeg" alt="img-instagram-1">
+                    </a>
+                </div>
+                <div class="img_instagram">
+                    <a href="#">
+                        <img src="img/img_bebe.jpeg" alt="img-instagram-2">
+                    </a>
+                </div>
+                <div class="img_instagram">
+                    <a href="#">
+                        <img src="img/img_bebe.jpeg" alt="img-instagram-3">
+                    </a>
+                </div>
+                <div class="img_instagram">
+                    <a href="#">
+                        <img src="img/img_bebe.jpeg" alt="img-instagram-4">
+                    </a>
+                </div>
+                <div class="img_instagram">
+                    <a href="#">
+                        <img src="img/img_bebe.jpeg" alt="img-instagram-5">
+                    </a>
+                </div>
+                <div class="img_instagram">
+                    <a href="#">
+                        <img src="img/img_bebe.jpeg" alt="img-instagram-6">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER"-->
+    <footer class="footer_abajo">
+        <section class="sec_footer">
+            <div class="div_footer">
+                <div class="div_centro_footer">
+                    <div class="div_correo_telefono">
+                        <h3>
+                            <a href="#">
+                                correo
+                            </a>
+                        </h3>
+                        <h3>
+                            <a href="#">
+                                telefono
+                            </a>
+                        </h3>
+                    </div>
+                    <div>
+                        <h1>hola</h1>
+                        <img src="" alt="">
+                        <a class="img_nav" href="index.html">
+                            
+                        </a>
+                    </div>
+                    <div>
+                        <nav>
+                            <a class="img_nav" href="index.html"></a>
+                            <a class="img_nav" href="index.html"></a>
+                            <a class="img_nav" href="index.html"></a>
+                            <a class="img_nav" href="index.html"></a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </section>
-    </div>
-    <div class="div_tercer_titulo">
-        <div class="div_subtitulo_tercer_titulo">
-            <pre class="pre_subtitulo"><code class="code_subtitulo">ULTIMOS PROYECTOS DE TECNOHOGAR</code></pre>
-            <p class="tercer_titulo">Eche un vistazo a algunos de mis últimos proyectos de Tecnohogar en los que estaba
-                trabajando.</p>
-        </div>
-    </div>
 
-
-    <div class="div_img_proyectos">
-        <STYLE>
-            A {
-                text-decoration: none;
-            }
-        </STYLE>
-        <a href="#">
-            <div class="div_primera_img_proyectos">
-                <p class="btn_img_proyectos">Remodelacion de cocina</p>
-            </div>
-        </a>
-
-        <a href="#">
-            <div class="div_segunda_img_proyectos">
-                <p class="btn_img_proyectos">Remodelacion de sala</p>
-            </div>
-        </a>
-    </div>
-
-    <div class="div_tercer_titulo">
-        <div class="div_subtitulo_tercer_titulo">
-            <pre class="pre_subtitulo"><code class="code_subtitulo">PROCEDIMIENTO DE TRABAJO</code></pre>
-            <p class="tercer_titulo">Nuestro procedimiento de trabajo es simple y eficaz, en tres simples pasos
-                renovamos tu hogar.</p>
-        </div>
-    </div>
-    <div class="div_procedimientos_trabajos">
-        <div class="div_primer_procedimiento_trabajo primer_procedimiento">
-            <p class="tit_procedimiento_trabajo">Remodelacion de sala</p>
-            <h3 class="contenido_procedimiento_trabajo"></h3>
-        </div>
-
-        <div class="div_primer_procedimiento_trabajo segundo_procedimiento">
-            <p class="tit_procedimiento_trabajo">Remodelacion de sala</p>
-            <h3 class="contenido_procedimiento_trabajo"></h3>
-        </div>
-
-        <div class="div_primer_procedimiento_trabajo tercer_procedimiento">
-            <p class="tit_procedimiento_trabajo">Remodelacion de sala</p>
-            <h3 class="contenido_procedimiento_trabajo"></h3>
-        </div>
-    </div>
-
-    <div class="div_tercer_titulo">
-        <div class="div_subtitulo_tercer_titulo">
-            <div class="div_subtitulo_instagram"><pre class="pre_subtitulo"><code class="code_subtitulo">Mi cuenta de instagram</code></pre></div>
-            <p class="tercer_titulo tit_instagram">Nuestro procedimiento de trabajo es simple y eficaz, en tres simples pasos
-                renovamos tu hogar.</p>
-        </div>
-    </div>
-
-    <div class="div_procedimientos_trabajos contenedor_instagram">
-    <div class="div_img_instagram">
-        <div class="img_instagram"><a href="#"><img src="img/img_bebe.jpeg" alt="img-instagram-1"></a></div>
-        <div class="img_instagram"><a href="#"><img src="img/img_bebe.jpeg" alt="img-instagram-2"></a></div>
-        <div class="img_instagram"><a href="#"><img src="img/img_bebe.jpeg" alt="img-instagram-3"></a></div>
-        <div class="img_instagram"><a href="#"><img src="img/img_bebe.jpeg" alt="img-instagram-4"></a></div>
-        <div class="img_instagram"><a href="#"><img src="img/img_bebe.jpeg" alt="img-instagram-5"></a></div>
-        <div class="img_instagram"><a href="#"><img src="img/img_bebe.jpeg" alt="img-instagram-6"></a></div>
-    </div>
-    </div>
-
-    <div class="div_footer">
-        <div class = "div_centro_footer">
-            <div>
-
-            </div>
-            <div>
-
-            </div>
-            <div>
-                
+        <div class="div_bajo_footer">
+            <div class="div_marca_registrada">
+                <h3 class="h3_marca_registrada">
+                    © 2022 F Doriass. Reservados todos los derechos. Desarrollador de TecnoHogar.
+                </h3>
+                <h3 class="h3_condiciones_politica">
+                    <a class="condiciones" href="#">
+                        Condiciones de servicio
+                    </a>             
+                    <a class="politica" href="">
+                        Política de privacidad
+                    </a>
+                </h3>
             </div>
         </div>
-    </div>
+    </footer>
 </body>
 
 </html>

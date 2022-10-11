@@ -1,3 +1,9 @@
+commit e3ea9175bd61eeebea6c3f660eca0641d49ec1ac
+Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
+Date:   Wed Sep 28 18:52:52 2022 -0300
+
+    Agrego tit 3, 4 y 5 con css de tit2/ Agrego dos img en ultimos proyecto(tit3), agrego grilla en proceso de trabajo(tit4), agrego grilla en mi cuenta instagram(tit5) y empiezo el footer
+
 commit b2be635fefef3d3a87766ae0ca4838de646edcc7
 Author: F-DoriAssan <f.doriass@gmail.com>
 Date:   Mon Sep 26 19:18:27 2022 -0300

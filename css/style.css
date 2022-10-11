@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway);
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
 /*Reglas universales*/
 *,*:before,*:after {
     margin: 0;
@@ -18,9 +19,9 @@ p {
   font-family: 'Merriweather', serif;
   color: #e2e2e2;
 }
-    /*ESTILO DEL BODY*/
-body {
-    
+
+/*ESTILO DEL BODY*/
+body{
     font-size: 16px;
     font-family: 'Raleway', sans-serif; 
     margin-left: 27px;
@@ -28,48 +29,42 @@ body {
     background-color: #000000;  
   }
 
-
-    /*NAVEGADOR*/
-
-.header {
+/*Header*/
+  .header{
     background: url(../img/portada1.jfif) no-repeat center; /*no se repita la imagen */
     background-size: cover; /*se adapte al 100*/
     min-height: 100vh; /*el alto completo*/
-
-    
   }
-  .header .navbar {
+  .header .navbar{
     background-color: rgba(34, 33, 33, 0.541) !important;
-    height: 65px !important;            /* Cambia el valor del nav */
+    height: 65px !important;/* Cambia el valor del nav */
     line-height: 30px !important;
-
   }
-nav li {
+
+/*Nav(Logo y marca)*/
+  .img_nav{
+    background-image: url(../img/logo_navegador.png);
+    width: 48px;
+    height: 51px;
+    text-decoration: none;
+    background-position: center;
+    background-size: 100%;
+    margin-right: 1px; 
+    margin-left: 27px;
+  }
+  .tecnogar{
+    color: #e2e2e2 !important;
+  }
+/*Estilo y trancisiones del nav*/
+nav li{
     margin-right: 15px;
     margin-top: 20px;
   }
-/*img nav(logo del nav)*/
-.img_nav {
-  background-image: url(../img/logo_navegador.png);
-  width: 48px;
-  height: 51px;
-  text-decoration: none;
-  background-size: 100%;
-  background-position: center;
-  margin-left: 27px;
-  margin-right: 1px; 
-}
-/*tecnogar nav*/
-.tecnogar {
-    color: #e2e2e2 !important;
-}
-/*estilo y trancisiones del nav*/
-nav li a {
+nav li a{
     letter-spacing: 2px; /*Separacion de letra del nav*/
     color: #e2e2e2; 
-    
   }
-nav div ul li a:before {
+nav div ul li a:before{
     content : "";
     position: absolute;
     bottom: 5px; /*distancia de abajo*/
@@ -80,30 +75,24 @@ nav div ul li a:before {
     width   : 0px;  /* borde */
     transition-duration: 0.5s;
     transition-delay: 0.0789474s;
-    
   }
-  .inicio:hover:before {
+  .inicio:hover:before{
     width   : 41px;  /* borde */
     transition-duration: 0.5s;
     transition-delay: 0.0789474s;
   }
-  .proyectos:hover:before {
+  .proyectos:hover:before{
     width   : 73px;  /* borde*/
     transition-duration: 0.5s;
     transition-delay: 0.0789474s;
-
   }
-  .contacto:hover:before {
+  .contacto:hover:before{
     width   : 66px;  /* borde*/
     transition-duration: 0.5s;
     transition-delay: 0.0789474s;
-
   }
-
-
-    /* ESTILOS BOTÓN */
-
-  .boton_portada {
+/* Boton principal */
+  .btn_principal{
     background: rgba(102, 100, 100, 0.527) !important; /* color de fondo */
     color: #e2e2e2 !important; /* color de fuente */
     border: 2px solid #0000008f !important; /* tamaño y color de borde */
@@ -116,12 +105,11 @@ nav div ul li a:before {
     margin-top: 6px;
     margin-left: 27px;
     margin-right: 27px; 
-
   }
-  .boton_portada:hover {
+  .btn_principal:hover{
     color: #ffffff; /* color de fuente hover */
   }
-  .boton_portada::after {
+  .btn_principal::after{
     content: "";
     background: #8686969c; /* color de fondo hover */
     position: absolute;
@@ -135,7 +123,7 @@ nav div ul li a:before {
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
   }
-  .boton_portada:hover::after {
+  .btn_principal:hover::after{
     left: 0;
     right: 0;
     top: 0;
@@ -143,26 +131,50 @@ nav div ul li a:before {
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
   }
+/*Tit y subTit principales*/
+.div_tit_subTit_principal{
+  width: 100%;
+  max-width: 80%;
+  height: 40%;
+  padding: 2% 2% 2% 15%;
+  margin-top: 60px;
+  margin: 2% 2% 2% 15%;
+}
+.div_tit_pincipal{
+  width: 60%;
+  display: inline-block;
+  margin: 0px auto;
+}
+.tit_pincipal{
+  font-size: 30px;
+}
+.div_subTit_principal{
+  width: 60%;
+  display: inline-block;
+  margin: 0px auto;
+  padding-bottom: 0.3vmax;
+}
+.code_subTit{
+  font-family: 'Poppins', sans-serif;
+  color: #c0c0c0;
+  font-size: 16px;
+}
 
-
-    /*PRIMER TITULO*/
-    .div_img_primer_titulo_contenido{
-      width: 100%;
-      height: 800px;
+/*Primera seccion "Pasion y enfoque"*/
+  .div_img_primer_titulo_contenido{
+    width: 100%;
+    height: 800px;
+  }
+  .primer_img{
+    background-image: url(../img/img_contenido.jfif);
+    width: 33.7%;
+    height: 200px;
+    background-size: cover; /*se adapte al 100*/
+    margin: 27px;
+    float: left;
+    min-height: 100vh; /*el alto completo*/    
     }
-    .primer_img {
-      background-image: url(../img/img_contenido.jfif);
-      width: 33.7%;
-      height: 200px;
-      background-size: cover; /*se adapte al 100*/
-      margin: 27px;
-      float: left;
-      min-height: 100vh; /*el alto completo*/
-      
-      
-    
-     }
-    .div_primer_titulo {
+  .div_primer_titulo{
     width: 40%; 
     height: 40%;
     display: inline-block;
@@ -171,31 +183,24 @@ nav div ul li a:before {
     max-width: 40%;
     white-space: break-word;
     margin-left: 5%;
-    }
-    .primer_titulo{
-
+  }
+  .primer_titulo{
     font-size: 37px;
     text-align: center;
     margin: 20px 27px 15px 27px;
-
-    }  
-
-  .primer_contenido{
+  }  
+  .letra_contenido{
     margin-top: 10%;
     color: #e2e2e2;
     font-size: 20px;
     text-align: center;
-
   }
   .div_btn_primer_contenido{
     margin-left: 55%;
     margin-top: 2%;
   }
 
-      /*TARJETAS*/
-      .cards{
-        margin-left: 5px;
-      }
+/*Segunda seccion"TARJETAS"*/
   .div_segundo_titulo{
     width: 80%;
     max-width: 80%;
@@ -208,61 +213,7 @@ nav div ul li a:before {
   .segundo_titulo{
     text-align: center;
   }
-  .cabecera {
-        background-color: hsl(0, 0%, 0%);
-        margin: 2%;
-    }
-  .centrado {
-        margin: 3px auto;
-        padding: 0 .8em;
-        background-color: rgb(0, 0, 0);
-    }
-  .div_cards_unidad {
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 350px;
-    padding: 10%;
-    content : "";
-
-    
-  }
-    @media screen and(min-width: 52em) {
-      .centrado {
-          margin: 0 auto;
-          padding: 0 .8em;
-      }
-  }
-  .titulo1 {
-    margin: 0 0 1em;
-    padding: 1em 0;
-    font-weight: 300;
-    color: hsl(0, 6%, 79%);
-    background-color: black;
-}
-.tarjeta a{
-    color: hsl(0, 0%, 20%);
-    text-decoration: none;
-}
-
-.tarjeta a:hover{
-    box-shadow: 3px 3px 8px hsl(0, 0%, 30%);
-}
-
-.tarjeta-content {
-    padding: 1.4em;
-}
-.tarjeta-content h2 {
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    font-weight: normal;
-}
-.tarjeta-content p {
-    font-size: 95%;
-}
-
-/*empezamos flexbox*/
-
-.tarjeta {
+  .tarjeta{
     margin-right: 3px;
     margin-bottom: 2em;
     width: 32%;
@@ -270,209 +221,216 @@ nav div ul li a:before {
     border-left-width: 5px;
     background-color: rgb(0, 0, 0);
     word-wrap:break-word
-
-}
-
-.cards {
-  margin-left: 7%;
-  margin-right: 7%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.titulo_card{
-  font-size: 24px;
-  
-}
-.contenido_card{
-  font-size: 90%;
-  letter-spacing: 2px;
-  
-}
-.div_contenido_card {
-  width: 100%;
-  height: 70%;
-  padding: 5%;
-}
-.btn_tarjetas{
-  font-size: 16px;
-  color: #e1a87a;
-  padding: 10% 10% 10% 5%;
-
-}
-.div_tercer_titulo {
-  width: 80%;
-  height: 40%;
-  padding: 2% 2% 2% 15%;
-  margin-top: 60px;
-  margin: 2% 2% 2% 15%;
-}
-.div_subtitulo_tercer_titulo {
-width: 60%;
-display: inline-block;
-margin: 0px auto;
-}
-.code_subtitulo {
-font-family: 'Poppins', sans-serif;
-color: #c0c0c0;
-font-size: 16px;
-}
-.tercer_titulo {
-font-size: 30px;
-}
-
-.div_img_proyectos{
-
-  width: 100%;
-  height: 400px;
-  padding: 3% 8% 3% 8%;
-}
-.div_primera_img_proyectos{
-  background-image: url(../img/img_proyectos_1.jfif);
-  background-size: cover; 
-  width: 45%;
-  height: 300px;
-  float: left;
-}
-.div_segunda_img_proyectos{
-  background-image: url(../img/img_proyectos_2.jfif);
-  background-size: cover; 
-  width: 45%;
-  height: 300px;
-  float: right;
-}
-.btn_img_proyectos{
-  font-size: 26px;
-  padding: 5% 1% 1% 1%;
-  margin-top: 55%;
-}
-
-.div_procedimientos_trabajos{
-  width: 100%;
-  height: 500px;
-  padding: 0% 8% 2% 8%;
-  
-}
-.div_primer_procedimiento_trabajo{
-  background-image: url(../img/img_proyectos_1.jfif);
-  background-size: cover; 
-  width: 30%;
-  height: 420px;
-  float: left;
-  margin-right: 3%;
-}
-.primer_procedimiento{
-  background-image: url(../img/img_bebe.jpeg);
-}
-.segundo_procedimiento{
-  background-image: url(../img/img_familia.jpeg);
-}
-.tercer_procedimiento{
-  background-image: url(../img/img_cafe.jpeg);
-}
-
-.div_subtitulo_instagram {
-  text-align: center;
-  padding-top: 0.1%;
-
-}
-.tit_instagram{
-  margin-bottom: 0%;
-}
-
-.contenedor_instagram{
-  width: 97%;
-  height: 300px;
-  margin-left: 2.6%;
-  display: flex;
-
-  
-}
-.div_img_instagram{
-  width: 100%;
-  height: auto;
-
-}
-.img_instagram {
-  background-size: cover; 
-  float: left;
-  margin-right: 0.1%;
-  width: 16.5%;
-  height: 180px;
-  overflow: hidden;
-  
-}
-.img_instagram .img{ 
-  width: 100%;
-  height: auto;  
-}
-@supports(object-fit: cover){
-  .img_instagram img{
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-    
+  }
+  .tarjeta a{
+    color: hsl(0, 0%, 20%);
+    text-decoration: none;
+  }
+  .tarjeta a:hover{
+    box-shadow: 3px 3px 8px hsl(0, 0%, 30%);
+  }
+  .tarjeta-content {
+    padding: 1.4em;
+  }
+  .tarjeta-content p{
+    font-size: 95%;
+  }
+ .cards{
+    margin-right: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 7%;
+  }
+  .titulo_card{
+    font-size: 24px;
+  }
+  .contenido_card{
+    letter-spacing: 2px;
+    font-size: 90%;
+    color: #e2e2e2a8;
+  }
+  .div_contenido_card{
+    width: 100%;
+    height: 70%;
+    padding: 5%;
+  }
+  .btn_tarjetas{
+    font-size: 16px;
+    padding: 10% 10% 10% 5%;
+    color: #e1a87a;
   }
 
-.div_footer{
-    margin-bottom: 1px;
+/*Tercera seccion "Proyecctos sala y cocina"*/
+  .div_proyectos{
+    width: 100%;
+    height: 400px;
+    padding: 0% 8% 0% 8%;
+  }
+  .div_img_proyectos{
+    background-image: url(../img/img_proyectos_1.jfif);
+    background-size: cover; 
+    width: 45%;
+    height: 300px;
+    float: left;
+  }
+  .img_segunda{
+    background-image: url(../img/img_proyectos_2.jfif);
+    float: right;
+  }
+  .btn_img_proyectos{
+    font-size: 26px;
+    padding: 5% 1% 1% 1%;
+    margin-top: 55%;
+  }
+
+/*Cuerta seccion "Procedimiento de trabajo*/
+  .div_procedimientos_trabajos{
+    width: 100%;
+    height: 500px;
+    padding: 0% 8% 2% 8%;
+  }
+  .div_primer_procedimiento_trabajo{
+    background-image: url(../img/img_proyectos_1.jfif);
+    background-size: cover; 
+    width: 30%;
+    height: 420px;
+    float: left;
+    margin-right: 3%;
+  }
+  .primer_procedimiento{
+    background-image: url(../img/img_bebe.jpeg);
+  }
+  .segundo_procedimiento{
+    background-image: url(../img/img_familia.jpeg);
+  }
+  .tercer_procedimiento{
+    background-image: url(../img/img_cafe.jpeg);
+  }
+
+/*Quinta seccion "Cuenta instagram*/
+  .tit_instagram{
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+ .contenedor_instagram{
+    width: 97%;
+    height: 300px;
+    margin-left: 2.6%;
+    display: flex;
+  }
+  .div_img_instagram{
+    width: 100%;
+    height: auto;
+  }
+  .img_instagram{
+    background-size: cover; 
+    float: left;
+    margin-right: 0.1%;
+    width: 16.5%;
+    height: 180px;
+    overflow: hidden;
+  }
+  .img_instagram .img{ 
+    width: 100%;
+    height: auto;  
+  }
+  @supports(object-fit: cover){
+    .img_instagram img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+
+/*FOOTER*/
+  .footer_abajo{
+    height: 100%;
+  }
+  .sec_footer{
+    padding-top: 1.3vmax;
+    padding-bottom: 1.3vmax;
+    border-top: 1px solid #9797975e;
+    border-bottom: 1px solid #9797975e;
+  }
+  .div_footer{
+    height: 100%;
     width: 100%;
     padding-top: 3.3vmax;
     padding-bottom: 3.3vmax;
-    border-top: 1px solid #9797975e;
-    border-bottom: 1px solid #9797975e;
     background-color: rgb(0, 0, 0);
-    
-
-}
-.div_centro_footer {
-  width: 100%;
-  height: 100px;
-  padding: 4% 6.5%;
-}
-}
-
-  /*Responsive de tableta*/
-  @media all and (min-width: 600px) and (max-width: 1023px){
- 
-    .header {
-      margin-left: 27px;
-      margin-right: 27px;  
-      }
-      .div_img_primer_titulo_contenido{
-        width: 100%;
-        height: auto;
-      }
-      .primer_img {
-        
-        height: auto;
-        background-position: 0;
-      }
-    .div_primer_titulo {
-      margin-top: 5%;
-      overflow: hidden;
-      margin-left: 5%;
-      
-      
-    }
-    .div_primer_contenido{
-      margin-left: 5%;
-      overflow: hidden;
-    }
-
-    .primer_titulo{
-      font-size: 22px;
-    }
-    .primer_contenido{
-      font-size: 16px;
-    }
-  .boton_portada{
-      float: none;
-      margin-left: auto;
-      margin-right: auto;
-      background-position: center;
   }
-  .boton_portada {
+  .div_centro_footer{
+    width: 100%;
+    height: 100px;
+    padding: 4% 6.5%;
+    align-items: center;
+    display: flex;
+  }
+  .div_bajo_footer{
+    padding-top: calc(14vmax / 10);
+    padding-bottom: calc(14vmax / 10);
+  }
+  .div_marca_registrada{
+    width: 100%;
+    padding-top: 3.3vmax;
+    padding-bottom: 3.3vmax;
+    text-align: center;
+  }
+  .h3_marca_registrada{
+    font-size: small;
+  }
+  .h3_condiciones_politica{
+    margin-top: 2%;
+    font-size: small;
+  }
+  .condiciones{
+    padding: 0 2%;
+  }
+  .politica{
+    padding: 0 2%;
+  }
+
+
+
+/*Responsive de tableta*/
+@media all and (min-width: 600px) and (max-width: 1023px){
+  .header{
+    margin-left: 27px;
+    margin-right: 27px;  
+  }
+  .div_img_primer_titulo_contenido{
+    width: 100%;
+    height: auto;
+  }
+  .primer_img{
+    height: auto;
+    background-position: 0;
+  }
+  .div_primer_titulo{
+    margin-top: 5%;
+    overflow: hidden;
+    margin-left: 5%;    
+  }
+  .div_primer_contenido{
+    margin-left: 5%;
+    overflow: hidden;
+  }
+  .primer_titulo{
+    font-size: 22px;
+  }
+  .primer_contenido{
+    font-size: 16px;
+  }
+  .boton_portada{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+  }
+  .boton_portada{
     margin-left: 1%;
   }
   .div_segundo_titulo{
@@ -484,7 +442,6 @@ font-size: 30px;
   }
   .titulo_card{
     font-size: 20px;
-    
   }
   .div_contenido_card{
     width: auto;
@@ -493,27 +450,26 @@ font-size: 30px;
   .contenido_card{
     font-size: 70%;
     letter-spacing: 2px;
-    
   }
   .btn_tarjetas{
     width: 100%;
     margin-top: 10% 0% 5% 0%;
-  
   }
- 
 }
 
-
  /*Responsive de celular*/
- @media all and (max-width: 600px)  {
-
-  .content {
+ @media all and (max-width: 600px){
+  .header{
+    margin-left: 27px;
+    margin-right: 27px;
+  }
+  .content{
     display: block;
     width: 100%;
     height: auto;
     float: none;
   }
-  .primer_img {
+  .primer_img{
     background-image: url(../img/img_contenido.jfif);
     width: 87.7%;
     height: 500px;
@@ -521,16 +477,11 @@ font-size: 30px;
     margin-right: 27px;
     float: left;
     margin-left: 27px;
-   }
-   .header {
-    margin-left: 27px;
-    margin-right: 27px;
-    
   }
   .boton_portada{
     float: none;
     margin-left: auto;
     margin-right: auto;
     background-position: center;
-}
+  }
 }
