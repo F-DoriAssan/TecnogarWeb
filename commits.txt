@@ -1,3 +1,9 @@
+commit f1a644fd427d0cfe9ea1458bb10e3850df641864
+Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
+Date:   Mon Oct 10 21:05:31 2022 -0300
+
+    Agrego comentarios, acomodo codigo. Agrego footer, agrego las subPaginas y sus enlaces
+
 commit e3ea9175bd61eeebea6c3f660eca0641d49ec1ac
 Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
 Date:   Wed Sep 28 18:52:52 2022 -0300

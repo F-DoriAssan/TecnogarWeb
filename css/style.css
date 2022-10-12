@@ -19,15 +19,20 @@ p {
   font-family: 'Merriweather', serif;
   color: #e2e2e2;
 }
+section {
+  display: block;
+  position: relative;
+}
 
-/*ESTILO DEL BODY*/
+/*ESTILO DEL BODY Y HTML*/
 body{
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif; 
-    margin-left: 27px;
-    margin-right: 27px; 
-    background-color: #000000;  
-  }
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif; 
+  background-color: #000000;  
+}
+html{
+  min-height: 100%;
+}
 
 /*Header*/
   .header{
@@ -64,6 +69,21 @@ nav li a{
     letter-spacing: 2px; /*Separacion de letra del nav*/
     color: #e2e2e2; 
   }
+
+ul ul {
+    position: absolute;
+    min-width: 200px;
+    background-color: rgba(34, 33, 33, 0.541) !important;
+    display: none;
+  }
+
+ul ul li {
+    display: block;
+  }
+
+ul li:hover ul {
+     display: block;
+  }
 nav div ul li a:before{
     content : "";
     position: absolute;
@@ -82,12 +102,36 @@ nav div ul li a:before{
     transition-delay: 0.0789474s;
   }
   .proyectos:hover:before{
-    width   : 73px;  /* borde*/
+    width   : 75px;  /* borde*/
     transition-duration: 0.5s;
     transition-delay: 0.0789474s;
   }
   .contacto:hover:before{
-    width   : 66px;  /* borde*/
+    width   : 68px;  /* borde*/
+    transition-duration: 0.5s;
+    transition-delay: 0.0789474s;
+  }
+  .quienes_somos:before{
+    bottom: 140px; /*distancia de abajo*/
+  }
+  .nuestros_clientes:before{
+    bottom: 77px; /*distancia de abajo*/
+  }
+  .empresas_confiaron:before{
+    bottom: 10px; /*distancia de abajo*/
+  }
+  .quienes_somos:hover:before{
+    width   : 131px;  /* borde */
+    transition-duration: 0.5s;
+    transition-delay: 0.0789474s;
+  }
+  .nuestros_clientes:hover:before{
+    width   : 137px;  /* borde */
+    transition-duration: 0.5s;
+    transition-delay: 0.0789474s;
+  }
+  .empresas_confiaron:hover:before{
+    width   : 173px;  /* borde */
     transition-duration: 0.5s;
     transition-delay: 0.0789474s;
   }
@@ -105,6 +149,7 @@ nav div ul li a:before{
     margin-top: 6px;
     margin-left: 27px;
     margin-right: 27px; 
+    text-decoration: none;
   }
   .btn_principal:hover{
     color: #ffffff; /* color de fuente hover */
@@ -365,18 +410,68 @@ nav div ul li a:before{
   .div_centro_footer{
     width: 100%;
     height: 100px;
-    padding: 4% 6.5%;
+    padding: 0 20.5%;
     align-items: center;
     display: flex;
   }
+  .div_elemento_footer{
+    width: 33.3%;
+    height: auto;
+    float: right;
+  }
+  .div_img_footer{
+    padding: 0 9%;
+    text-align: center;
+  }
+  .div_correo_tel{
+    padding-right: 7% ;
+    text-align: center;
+  }
+  .a_footer_varios{
+    font-size: medium;
+    color: #ffd190;
+    text-decoration-line: none;
+    background-image: linear-gradient(currentColor,currentColor);
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    background-position: left bottom;
+  }
+  .a_footer_varios:hover{
+    color: #ffffff;
+  }
+  .tecnohogar_footer{
+    font-size: medium;
+  }
+  .img_footer{
+    width: 80px;
+    height: 80px;
+    text-decoration: none;
+    background-position: center;
+    background-size: 100%;
+  }
+  .nav_footer{
+    display: inline;
+    list-style: none;
+  }
+  .ul_redes{
+    display: contents;
+    list-style: none;
+    text-decoration: none;    
+  }
+  .a_redes{
+    list-style: none;
+    text-decoration: none;
+  }
+  /*Bajo footer*/
   .div_bajo_footer{
-    padding-top: calc(14vmax / 10);
-    padding-bottom: calc(14vmax / 10);
+    padding-top: calc(9vmax / 10);
+    padding-bottom: calc(9vmax / 10);
+    background-color: #000000;
   }
   .div_marca_registrada{
     width: 100%;
-    padding-top: 3.3vmax;
-    padding-bottom: 3.3vmax;
+    padding-top: 1.3vmax;
+    padding-bottom: 1.3vmax;
     text-align: center;
   }
   .h3_marca_registrada{
@@ -386,11 +481,19 @@ nav div ul li a:before{
     margin-top: 2%;
     font-size: small;
   }
-  .condiciones{
-    padding: 0 2%;
+  .a_footer{
+    color: #ffd190;
+    text-decoration-line: none;
+    background-image: linear-gradient(currentColor,currentColor);
+    background-repeat: no-repeat;
+    background-size: 100% 1px;
+    background-position: left bottom;
   }
-  .politica{
-    padding: 0 2%;
+  .a_footer:hover{
+    color: #e2e2e2;;
+  }
+  .condiciones_marca{
+    margin-right: 2%;
   }
 
 

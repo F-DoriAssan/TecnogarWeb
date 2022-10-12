@@ -16,62 +16,80 @@
     <!--Icono de pestaña-->
     <link rel="icon" href="img/logo_nav_1.png">
 </head>
-<style>
-    html {
-        min-height: 100%;
-    }
-
-    body {
-
-        background-color: #000000;
-    }
-</style>
-
 <body>
+    <link rel="stylesheet" href="css/style.css">
 <!--Header y nav-->
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="img_nav" href="index.html"></a>
-            <a class="navbar-brand tecnogar" href="index.html">TecnoHogar</a>
+            <a class="img_nav" href="index.html">                
+            </a>
+            <a class="navbar-brand tecnogar" href="index.html">
+                TecnoHogar
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon">                    
+                </span>
             </button>
 
             <div class="collapse navbar-collapse navegador" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item active">
                         <a class="nav-link inicio" href="index.html">
-                            <font size="2" color="#e2e2e2">Inicio</font>
+                            <font size="2" color="#e2e2e2">
+                                Inicio
+                            </font>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link proyectos" href="subPaginas/proyectos.html">
-                            <font size="2" color="#e2e2e2">Proyectos</font>
+                            <font size="2" color="#e2e2e2">
+                                Proyectos
+                            </font>
                         </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <font size="2" color="#e2e2e2">Nosotros</font>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                        </div>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/Nosotros" tabindex="-1">                          
+                            <font size="2" color="#e2e2e2">
+                                Nosotros
+                            </font>
+                        </a>
+                        <ul>
+                            <li class="nav-item">
+                                <a class="nav-link quienes_somos" href="#">                       
+                                    <font size="2" color="#e2e2e2">
+                                    ¿Quienes somos?
+                                    </font>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nuestros_clientes" href="#">
+                                    <font size="2" color="#e2e2e2">
+                                        Nuestros clientes
+                                    </font>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link empresas_confiaron" href="#">
+                                    <font size="2" color="#e2e2e2">
+                                        Empresas que confian
+                                    </font>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>  
+                    <li class="nav-item">
                         <a class="nav-link contacto" href="subPaginas/contacto.html">
-                            <font size="2" color="#e2e2e2">Contacto</font>
+                            <font size="2" color="#e2e2e2">
+                                Contacto
+                            </font>
                         </a>
                     </li>
                 </ul>
             </div>
         </nav>
 <!--Boton de portada-->
-        <div class="divisor_btn"><a href="subPaginas/contacto.html" class="btn btn-primary btn_principal">Contrata a
+        <div class="divisor_btn"><a href="subPaginas/contacto.html" class="btn_principal">Contrata a
                 un experto</a></div>
     </header>
 
@@ -364,52 +382,61 @@
         </div>
     </section>
 
-    <!--FOOTER"-->
+<!--Footer(correo-tel, img logo y nav redes sociales)-->
     <footer class="footer_abajo">
         <section class="sec_footer">
             <div class="div_footer">
                 <div class="div_centro_footer">
-                    <div class="div_correo_telefono">
+                    <div class="div_elemento_footer div_correo_tel">
                         <h3>
-                            <a href="#">
-                                correo
+                            <a class="a_footer_varios" href="mailto:doriass.f@gmail.com">
+                                doriass.f@gmail.com
                             </a>
                         </h3>
                         <h3>
-                            <a href="#">
-                                telefono
+                            <a class="a_footer_varios" href="tel:+541141761096">
+                                +54 (11) 4176-1096
                             </a>
                         </h3>
                     </div>
-                    <div>
-                        <h1>hola</h1>
-                        <img src="" alt="">
-                        <a class="img_nav" href="index.html">
-                            
+                    <div class="div_elemento_footer div_img_footer">
+                        <a href="#">
+                            <img class="img_footer" src="img/logo_nav_1.png" alt="logo_TecnoHogar">
                         </a>
                     </div>
-                    <div>
-                        <nav>
-                            <a class="img_nav" href="index.html"></a>
-                            <a class="img_nav" href="index.html"></a>
-                            <a class="img_nav" href="index.html"></a>
-                            <a class="img_nav" href="index.html"></a>
+                    <div class="div_elemento_footer div_nav_footer">
+                        <nav class="nav_footer">
+                            <ul class="ul_redes">
+                                <a class="a_redes" href="#">
+                                    <img class="img_footer" src="img/logo_nav_1.png" alt="logo_TecnoHogar">
+                                </a>
+                            </ul>
+                            <ul class="ul_redes">
+                                <a class="a_redes" href="#">
+                                    <img class="img_footer" src="img/logo_nav_1.png" alt="logo_TecnoHogar">
+                                </a>
+                            </ul>                            
+                            <ul class="ul_redes">
+                                <a class="a_redes" href="#">
+                                    <img class="img_footer" src="img/logo_nav_1.png" alt="logo_TecnoHogar">
+                                </a>
+                            </ul>
                         </nav>
                     </div>
                 </div>
             </div>
         </section>
-
+<!--Bajo footer(derechos, condiciones y politica)-->
         <div class="div_bajo_footer">
             <div class="div_marca_registrada">
                 <h3 class="h3_marca_registrada">
-                    © 2022 F Doriass. Reservados todos los derechos. Desarrollador de TecnoHogar.
+                    © 2022 F Doriass. Reservados todos los derechos. Desarrollador de <a class="a_footer tecnohogar_footer" href="index.html">TecnoHogar.</a> 
                 </h3>
                 <h3 class="h3_condiciones_politica">
-                    <a class="condiciones" href="#">
+                    <a class="a_footer condiciones_marca" href="#">
                         Condiciones de servicio
                     </a>             
-                    <a class="politica" href="">
+                    <a class="a_footer" href="">
                         Política de privacidad
                     </a>
                 </h3>
