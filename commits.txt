@@ -1,3 +1,9 @@
+commit 8c5d8e57e225172231f777b3bf50b9c2af9a423f
+Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
+Date:   Tue Oct 11 22:35:19 2022 -0300
+
+    Codifico NOSOTROS del nav y su hover, sigo codificando el footer y finalizo con el bajo footer.
+
 commit f1a644fd427d0cfe9ea1458bb10e3850df641864
 Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
 Date:   Mon Oct 10 21:05:31 2022 -0300
