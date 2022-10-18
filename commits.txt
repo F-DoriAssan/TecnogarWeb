@@ -1,3 +1,9 @@
+commit 5bed3cd49fc425d5e246106fadaf69e53b2f4356
+Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
+Date:   Sun Oct 16 22:02:35 2022 -0300
+
+    Termino el Nav y empiezo con responsive de celular
+
 commit 8c5d8e57e225172231f777b3bf50b9c2af9a423f
 Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
 Date:   Tue Oct 11 22:35:19 2022 -0300
