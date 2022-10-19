@@ -13,15 +13,16 @@
     <script src="ext/bootstrap.min.js"></script>
     <script src="ext/jquery-3.6.1.min.js"></script>
     <script src="https://kit.fontawesome.com/c8736f2b49.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Icono de pestaña-->
     <link rel="icon" href="img/logo_navegador_negro.png">
 </head>
+
 <body>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js"></script>
-    
+
     <header class="header">
         <nav id="navbar">
             <a href="index.html" class="enlace">
@@ -32,60 +33,121 @@
             </a>
             <div class="div_nav">
                 <div class="verificar">
-                    <i class="fas fa-bars" onclick="celu()"></i>
-            </div>
-
-            <ul id="idCelular">
-                <li>
-                    <a class="inicio" href="index.html">
+                    <i class="fas fa-bars menu_celu" onclick="navCelu()"></i>
+                </div>
+                <ul id="idCelular" class="ul_idCelular">
+                    <li>
+                        <a class="inicio" href="index.html">
                             Inicio
-                    </a>
-                </li>
-                <li>
-                    <a class="proyectos" href="subPaginas/proyectos.html">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="proyectos" href="subPaginas/proyectos.html">
                             Proyectos
-                    </a>
-                </li>
-                <li>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="verificar_nosotros">
+                            <i onclick="celuNosotros()"></i>
+                            <a class="a_nosotros" tabindex="-1">
+                                <font color="#e2e2e2">
+                                    Nosotros
+                                </font>
+                            </a>
+                        </div>
+
+                        <a tabindex="-1">
+                            <font color="#e2e2e2">
+                                Nosotros
+                            </font>
+                        </a>
+                        <ul id="idNosotros">
+                            <li>
+                                <a class="quienes_somos" href="#">
+                                    ¿Quienes somos?
+                                </a>
+                            </li>
+                            <li>
+                                <a class="nuestros_clientes" href="#">
+                                    Nuestros clientes
+                                </a>
+                            </li>
+                            <li>
+                                <a class="empresas_confiaron" href="#">
+                                    Empresas que confian
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="contacto" href="subPaginas/contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+
+        <ul id="idDiv" class="ul_nav_celular">
+            <div>
+                <div class="div_a_nav_celular">
+                    <li>
+                        <a class="inicio" href="index.html">
+                            Inicio
+                        </a>
+                    </li>
+                </div>
+
+                <div class="div_a_nav_celular">
+                    <li>
+                        <a class="proyectos" href="subPaginas/proyectos.html">
+                            Proyectos
+                        </a>
+                    </li>
+                </div>
+
+                <div class="div_a_nav_celular">
+                    <div class="verificar_nosotros">
+                        <i onclick="celuNosotros()"></i>
+                        <a class="a_nosotros" tabindex="-1">
+                            <font color="#e2e2e2">
+                                Nosotros
+                            </font>
+                        </a>
+                    </div>
+
                     <a tabindex="-1">
                         <font color="#e2e2e2">
                             Nosotros
-                        </font>                          
+                        </font>
                     </a>
-                    <ul>
-                        <li>
-                            <a class="quienes_somos" href="#">                       
-                                ¿Quienes somos?
-                            </a>
-                        </li>
-                        <li>
-                            <a class="nuestros_clientes" href="#">
-                                    Nuestros clientes
-                            </a>
-                        </li>
-                        <li>
-                            <a class="empresas_confiaron" href="#">
-                                    Empresas que confian
-                            </a>
-                        </li>
-                    </ul>
-                </li>  
-                <li>
-                    <a class="contacto" href="subPaginas/contacto.html">
+                </div>
+
+                <div class="div_a_nav_celular">
+                    <li>
+                        <a class="contacto" href="subPaginas/contacto.html">
                             Contacto
-                    </a>
-                </li>
-            </ul>
-           
+                        </a>
+                    </li>
+                </div>
             </div>
-        </nav>
-             </div>
-             <!--Boton de portada-->
-             <div class="divisor_btn"><a href="subPaginas/contacto.html" class="btn_principal">Contrata a
-                un experto</a></div>
+
+
+            <!--Boton de portada-->
+            <div class="divisor_btn">
+                <a href="subPaginas/contacto.html" class="btn_principal">
+                Contrata a un experto
+                </a>
+            </div>
     </header>
 
-<!--Primera seccion(img, tit, contenido y btn)"PASION Y ENFOQUE"-->
+
+
+
+
+    <!--Primera seccion(img, tit, contenido y btn)"PASION Y ENFOQUE"-->
     <section class="primera_seccion">
         <div class="div_img_primer_titulo_contenido">
             <div class="primer_img">
@@ -110,11 +172,11 @@
         </div>
     </section>
 
-<!--Segunda seccion(tarjetas)"TODO SOBRE TECNOHOGAR"-->
+    <!--Segunda seccion(tarjetas)"TODO SOBRE TECNOHOGAR"-->
     <section class="segunda_seccion">
         <div class="div_segundo_titulo">
             <p class="segundo_titulo">
-                Todo sobre Tecnohogar.
+                Todo sobre Tecnohogar
             </p>
         </div>
         <div class="centrado">
@@ -244,9 +306,9 @@
             </section>
         </div>
     </section>
-</section>
+    </section>
 
-<!--Terce seccion(subTit, tit, img y btn)"PROYECTOS"-->
+    <!--Terce seccion(subTit, tit, img y btn)"PROYECTOS"-->
     <section class="tercera_seccion">
         <div class="div_tit_subTit_principal">
             <div class="div_subTit_principal">
@@ -264,9 +326,12 @@
         <div class="div_proyectos">
             <a href="subPaginas/proyectos.html">
                 <div class="div_img_proyectos">
-                    <p class="btn_img_proyectos">
-                        Remodelacion de cocina
-                    </p>
+                    <div>
+                        <p class="btn_img_proyectos">
+                            Remodelacion de cocina
+                        </p>
+                    </div>
+
                 </div>
             </a>
 
@@ -280,10 +345,10 @@
         </div>
     </section>
 
- <!--cuarta seccion(subTit, tit y img)"PROCEDIMIENTO DE TRABAJO"-->
+    <!--cuarta seccion(subTit, tit y img)"PROCEDIMIENTO DE TRABAJO"-->
     <section class="cuarta_seccion">
         <div class="div_tit_subTit_principal">
-            <div class="div_subTit_principal">               
+            <div class="div_subTit_principal">
                 <code class="code_subTit">
                     PROCEDIMIENTO DE TRABAJO
                 </code>
@@ -325,18 +390,18 @@
         </div>
     </section>
 
- <!--quinta seccion(subTit, tit, img y btn)"CUENTA INSTAGRAM"-->
+    <!--quinta seccion(subTit, tit, img y btn)"CUENTA INSTAGRAM"-->
     <section class="quinta_seccion">
         <div class="div_tit_subTit_principal tit_instagram">
             <div class="div_subTit_principal ">
-                    <code class="code_subTit">
+                <code class="code_subTit">
                          Mi cuenta de instagram
                     </code>
-                </div>
-                <div class="div_tit_pincipal">
-                    <p class="tit_pincipal">
-                        Visite mi cuenta personal de instagram para saber mas de nosotros.
-                    </p>
+            </div>
+            <div class="div_tit_pincipal">
+                <p class="tit_pincipal tit_insta_tit">
+                    Visite mi cuenta personal de instagram para saber mas de nosotros.
+                </p>
             </div>
         </div>
         <div class="div_procedimientos_trabajos contenedor_instagram">
@@ -375,7 +440,7 @@
         </div>
     </section>
 
-<!--Footer(correo-tel, img logo y nav redes sociales)-->
+    <!--Footer(correo-tel, img logo y nav redes sociales)-->
     <footer class="footer_abajo">
         <section class="sec_footer">
             <div class="div_footer">
@@ -408,7 +473,7 @@
                                 <a class="a_redes" href="#">
                                     <div class="img_logo ig"></div>
                                 </a>
-                            </ul>                            
+                            </ul>
                             <ul class="ul_redes">
                                 <a class="a_redes" href="#">
                                     <div class="img_logo in"></div>
@@ -419,19 +484,19 @@
                 </div>
             </div>
         </section>
-<!--Bajo footer(derechos, condiciones y politica)-->
+        <!--Bajo footer(derechos, condiciones y politica)-->
         <div class="div_bajo_footer">
             <div class="div_marca_registrada">
                 <h3 class="h3_marca_registrada">
                     © 2022 F Doriass. Reservados todos los derechos. Desarrollador de
-                     <a class="a_footer tecnohogar_footer" href="index.html">
+                    <a class="a_footer tecnohogar_footer" href="index.html">
                         TecnoHogar.
-                    </a> 
+                    </a>
                 </h3>
                 <h3 class="h3_condiciones_politica">
                     <a class="a_footer condiciones_marca" href="#">
                         Condiciones de servicio
-                    </a>             
+                    </a>
                     <a class="a_footer" href="#">
                         Política de privacidad
                     </a>

@@ -1,3 +1,9 @@
+commit c64d3ceec08142395b0de7856e19cee37b191787
+Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
+Date:   Tue Oct 18 00:21:35 2022 -0300
+
+    Sigo con responsive de tabletas y celulares, termino con el verificar del nav, cambio del nsv bs a nav realizado por mi, agrego las secciones. Muy buen dia de codificacion 10pts
+
 commit 5bed3cd49fc425d5e246106fadaf69e53b2f4356
 Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
 Date:   Sun Oct 16 22:02:35 2022 -0300
