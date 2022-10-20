@@ -30,6 +30,9 @@ p {
   font-family: 'Merriweather', serif;
   color: #e2e2e2;
 }
+a{
+  text-decoration: none;
+}
 section {
   display: block;
   position: relative;
@@ -171,35 +174,82 @@ nav div ul li a:before{
     transition-duration: 0.5s;
     transition-delay: 0.0789474s;
   }
-/*Configuracion del btn celular(verificar)*/
-  .verificar{
-    width: 1%;
-    padding: 5px 20%;
-    text-align: right;
-    box-sizing: border-box;
-    color: #fff;
-    font-size: 35px;
+/*Configuracion del nav celular(con bloque del scroll)*/
+  .menu_celu{
+    color: #e2e2e2;
+    font-size: 40px;
+    padding: 3% 10%;
+    margin-left: 62%;
     display: none;
     float: right;
-}
-.verificarNosotros{
-  width:100%;
-  padding: 10px 20px;
-  text-align: right;
-  box-sizing: border-box;
-  color: #fff;
-  font-size: 30px;
-  display: none;
-}
-  .hd_celular{
-    display: none;
-  }
-  .div_nav_celular{
-    display: none;
-  }
-  .verificar_nosotros{
-    display: none;
-  }
+    }
+    .menu_celu:active{
+      color: #605e5c;
+    }
+    #functions {
+      margin-top: 20px;
+      background-color: #eee;
+      display: none;
+    }
+    #functions button {
+      display: block;
+    }
+    .block {
+      display: block !important;
+    }
+    .bloqueo-scroll {overflow:hidden;}
+    #div-contenedor-bloqueo {display:none;}
+    #div-contenido-bloqeo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 1px 0;
+      z-index:1;
+      height: 100%;
+      width: 100%;
+    
+      background-color: transparent;
+    }
+    #div_nav_celular{
+      height: 20%;
+      top: 1%;
+      left: 1%;
+
+    }
+    #div-superpone{
+      background-color: rgb(43 33 33 / 92%);
+    }
+    .capa-completa{
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+    }
+    .div_a_nav_celular{
+      width: 100%;
+      height: auto;
+      padding: 5%;
+      border: 5px rgb(22, 22, 22);
+      background-color: #605e5c;
+    }
+    .a_nav_celu{
+      color: #ffffff;
+      font-size: 35px;
+      text-decoration: none;
+    }
+    .navCel_li{
+      width: 100%;
+      height: 100%;
+    }
+    .navCel{
+      width: 100%;
+      text-decoration: none;
+    }
+ 
+
 
 /* Boton principal */
   .btn_principal{
@@ -935,35 +985,12 @@ nav div ul li a:before{
   .enlace{
     margin: 4px 5% 0 ;
   }
-  .verificar{
-    display: block;
-  }
-  .navCelu{
-    display: block;
-  }
-  .idDiv{
-    width: 100%;
-    height: 100%;
-    background-color: #c0c0c0;
-    display: block;
-    text-align: center;
-  }
-  .menu_cel:active{
-    color: #c0c0c0;
-  }
 ul{
-  width: 100%;
-  display: none;
-
-}
-nav ul li{
-  background-color: #000000;
-
-}
-.a_nosotros{
   display: none;
 }
-
+.menu_celu{
+  display: block;
+}
   .content{
     display: block;
     width: 100%;
