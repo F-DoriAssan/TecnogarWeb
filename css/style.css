@@ -175,6 +175,8 @@ nav div ul li a:before{
     transition-delay: 0.0789474s;
   }
 /*Configuracion del nav celular(con bloque del scroll)*/
+
+
   .menu_celu{
     color: #e2e2e2;
     font-size: 40px;
@@ -186,19 +188,18 @@ nav div ul li a:before{
     .menu_celu:active{
       color: #605e5c;
     }
-    #functions {
-      margin-top: 20px;
-      background-color: #eee;
-      display: none;
+    .BTN1{
+      font-size: 35px;
+      padding: 4% 4%;
+      margin-left: 57%;
     }
-    #functions button {
-      display: block;
+    .nav_celular{
+      width: 100%;
+      padding: 0 27px;
+      height: 100px;
+      background-color: #000000;
+      margin-bottom: 30%;
     }
-    .block {
-      display: block !important;
-    }
-    .bloqueo-scroll {overflow:hidden;}
-    #div-contenedor-bloqueo {display:none;}
     #div-contenido-bloqeo {
       position: absolute;
       top: 50%;
@@ -207,26 +208,19 @@ nav div ul li a:before{
       background-color: #fff;
       padding: 1px 0;
       z-index:1;
-      height: 100%;
+      height: 100vh;
       width: 100%;
-    
       background-color: transparent;
     }
-    #div_nav_celular{
-      height: 20%;
-      top: 1%;
-      left: 1%;
-
-    }
-    #div-superpone{
-      background-color: rgb(43 33 33 / 92%);
-    }
+   
     .capa-completa{
       position: fixed;
       left: 0;
       top: 0;
       right: 0;
       bottom: 0;
+      display: none;
+      background-color: #000000;
     }
     .div_a_nav_celular{
       width: 100%;
@@ -234,21 +228,17 @@ nav div ul li a:before{
       padding: 5%;
       border: 5px rgb(22, 22, 22);
       background-color: #605e5c;
+      text-align: center;
     }
     .a_nav_celu{
       color: #ffffff;
       font-size: 35px;
       text-decoration: none;
     }
-    .navCel_li{
+    .div_nav_redes_celu{
       width: 100%;
-      height: 100%;
+      height: 10%;
     }
-    .navCel{
-      width: 100%;
-      text-decoration: none;
-    }
- 
 
 
 /* Boton principal */
@@ -989,6 +979,9 @@ ul{
   display: none;
 }
 .menu_celu{
+  display: block;
+}
+.menu_BTN1{
   display: block;
 }
   .content{

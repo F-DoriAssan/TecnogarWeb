@@ -1,3 +1,9 @@
+commit 2d9ef9447ba72661c9a2e874430c565e68ec977c
+Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
+Date:   Thu Oct 20 02:08:30 2022 -0300
+
+    Hago el btn del nav para celular, configuro su nav, realizo js para la apertura y el cierre. Dia muy estresante y cansador! Mañana debo terminar el responsive de celular
+
 commit f43caae56031377a828828aead9de96ebe84c084
 Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
 Date:   Wed Oct 19 01:10:13 2022 -0300

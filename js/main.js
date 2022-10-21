@@ -4,21 +4,29 @@ function celuNosotros(){
 }
 function navCelu(){
   document.getElementById("idDiv").classList.toggle("navCelu");
-}
-$(document).ready(function(){
-    var $divContenedor = $('#div-contenedor-bloqueo');
-    var $body = $('html,body');
+} 
+  function funcionBTN1() {
+      var x = document.getElementById("primero");
+      var y = document.getElementById("segundo");
+      if (x.style.display === "none") {
+          x.style.display = "block";
+          y.style.display = "none";
+      } else {
+          x.style.display = "block";
+          y.style.display = "none";
+      }
+      
+  }
+  
+  function funcionBTN2() {
+      var x = document.getElementById("primero");
+      var y = document.getElementById("segundo");
+      if (y.style.display === "none") {
+          y.style.display = "block";
+          x.style.display = "none";
+      } else {
+          x.style.display = "none";
+          y.style.display = "block";
+      }
+  }
 
-    $('#ventana-emergente').on('click', function() {
-        $divContenedor.fadeIn();
-        $body.addClass('bloqueo-scroll'); // clase de manejo
-    });
-    $('#div-superpone').on('click', function() {
-        $divContenedor.fadeOut();
-        $body.removeClass('bloqueo-scroll'); // clase de manejo
-    });
-});
-function openFunctions() {
-  var div = document.getElementById("functions");
-  div.classList.toggle("block");
-}
