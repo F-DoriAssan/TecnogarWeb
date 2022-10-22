@@ -1,3 +1,9 @@
+commit 21b81985aee0c9df45e7ea7b3224bbbb408c88b9
+Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
+Date:   Fri Oct 21 19:23:58 2022 -0300
+
+    Termino el nav de celular, el btn funciona con jv, con un if bloque el div uno mientras se abre el div 2 que es el nav, costo mucho hacerlo funcionar
+
 commit 2d9ef9447ba72661c9a2e874430c565e68ec977c
 Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
 Date:   Thu Oct 20 02:08:30 2022 -0300
