@@ -1,3 +1,9 @@
+commit 5ffa8dce7fe9be4bd8ca1ea3fe6dd2e59993d5d4
+Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
+Date:   Sat Oct 22 02:17:45 2022 -0300
+
+    Sigo con responsive para celular, me falta el footer cambiarlo para que sea mas estetico, fue un buen dia. Solucione el menu despegable que fue muy dificil.
+
 commit 21b81985aee0c9df45e7ea7b3224bbbb408c88b9
 Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
 Date:   Fri Oct 21 19:23:58 2022 -0300
