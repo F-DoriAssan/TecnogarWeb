@@ -1,3 +1,9 @@
+commit c4019e487c3f1efe0ff19d04ff168f2aab522fbc
+Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
+Date:   Sat Oct 22 19:36:29 2022 -0300
+
+    Sigo con responsive para celular, cambien el footer con un display inline-block, me falta el nav con whidt de 540px
+
 commit 5ffa8dce7fe9be4bd8ca1ea3fe6dd2e59993d5d4
 Author: Federico Dorigatti Assan <114174311+F-DoriAssan@users.noreply.github.com>
 Date:   Sat Oct 22 02:17:45 2022 -0300

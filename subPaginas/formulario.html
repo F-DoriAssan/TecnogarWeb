@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TecnoHogar Contacto</title>
+    <title>TecnoHogar Formulario</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="../ext/bootstrap.min.css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Icono de pestaña-->
@@ -22,87 +22,70 @@
 
 
 <body>
-    
-        <nav id="navbar">
+    <header class="header hd_forms">
+        <nav class="navbar">
             <a href="../index.html" class="enlace">
                 <img src="../img/logo_nav_1_gris.png" alt="loco_nav" class="logo_nav">
             </a>
             <a class=" tecnogar" href="../index.html">
                 TecnoHogar
             </a>
-            <div class="div_nav">
-                <i type="B2" onclick="funcionBTN2()" class="navbar-toggler menu_celu">≡</i>
-                <ul>
-                    <li>
-                        <a class="inicio" href="../index.html">
-                            Inicio
-                        </a>
-                    </li>
-                    <li>
-                        <a class="proyectos" href="../subPaginas/proyectos.html">
-                            Proyectos
-                        </a>
-                    </li>
-                    <li>
-                        <a tabindex="-1">
-                            <font color="#e2e2e2">
-                                Nosotros
-                            </font>
-                        </a>
-                        <ul>
-                            <li>
-                                <a class="quienes_somos" href="#">
-                                    ¿Quienes somos?
-                                </a>
-                            </li>
-                            <li>
-                                <a class="nuestros_clientes" href="#">
-                                    Nuestros clientes
-                                </a>
-                            </li>
-                            <li>
-                                <a class="empresas_confiaron" href="#">
-                                    Empresas que confian
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="contacto" href="../subPaginas/contacto.html">
-                            Contacto
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </nav>
-        <header class="header hd_contactos">
+
     </header>
-        <div class="div_primer_titulo tit_principal_subpag">
+    <div class="div_primer_titulo tit_principal_subpag">
         <p class="primer_titulo primer_tit_subpag_principal">
-            UBICACION
+            Formulario
         </p>
     </div>
     <!--Seccion redes y formulario-->
-    <section class="sc_contacto">
-        <div class="div_proyectos div_contactos_proyectos">
-            <a href="../subPaginas/redessociales.html" target="_blank">
-                <div class="div_img_proyectos img_redes_sociales">
-                    <div>
-                        <p class="btn_img_proyectos">
-                            Redes sociales
-                        </p>
-                    </div>
-
+    <section class="formulario_seccion">
+        <div class="div_form">
+            <form>
+                <!--action="doriass.f@gmail.com" method="get" enctype="text/plain"-->
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Correo</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="nombre@gmail.com">
                 </div>
-            </a>
-            <a href="../subPaginas/formulario.html" target="_blank">
-                <div class="div_img_proyectos img_form">
-                    <p class="btn_img_proyectos">
-                        Formulario de contacto
-                    </p>
+                <br>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Selecciona una categoria</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option disabled="disabled" value="0">Seleccione una opcion</option>
+                        <option>Empresa</option>
+                        <option>Local</option>
+                        <option>Particular</option>
+                    </select>
                 </div>
-            </a>
+                <br>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2">Elija una opcion</label>
+                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                        <option>Desarrollo</option>
+                        <option>Diseño</option>
+                        <option>Soporte</option>
+                        <option>Otros</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comentario</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        onFocus='this.value=""'>Escribe aqui una decripcion de tu consulta</textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Selecciona un archivo</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <br>
+                <div class="div_btn_type">
+                    <input type="submit" value=" Enviar datos ">
+                    <input type="reset" value=" Borrar informacion ">
+                </div>
         </div>
+        </form>
     </section>
     <!--Footer(correo-tel, img logo y nav redes sociales)-->
     <footer class="footer_abajo">
@@ -122,7 +105,7 @@
                         </h3>
                     </div>
                     <div class="div_elemento_footer div_img_footer">
-                        <a href="#">
+                        <a href="../index.html">
                             <div class="img_footer"></div>
                         </a>
                     </div>
@@ -148,7 +131,6 @@
                 </div>
             </div>
         </section>
-    </footer>
 </body>
 
 </html>

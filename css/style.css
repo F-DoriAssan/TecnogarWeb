@@ -36,6 +36,7 @@ a{
 section {
   display: block;
   position: relative;
+  background-color: #000000;
 }
 
 /*Header*/
@@ -61,7 +62,7 @@ section {
   height: 60px;
   text-align: center;
   position: absolute;
-  margin-left: 35%;  
+  margin-left: 37%;  
 }
 .enlace{
   position: absolute;
@@ -81,6 +82,7 @@ section {
 }
 .tecnogar:hover{
   border-bottom:2px solid #c0c0c0;
+  color: #ffffff;
 }
 nav ul{
   float: left;
@@ -139,6 +141,9 @@ nav div ul li a:before{
     width   : 75px;  /* borde*/
     transition-duration: 0.5s;
     transition-delay: 0.0789474s;
+  }
+  .nosotros{
+    cursor: context-menu;
   }
   .contacto:hover:before{
     width   : 72px;  /* borde*/
@@ -666,6 +671,128 @@ nav div ul li a:before{
   .condiciones_marca{
     margin-right: 2%;
   }
+/*CONTACTOS*/
+/*Tit sub-pag*/
+.tit_principal_subpag{
+  width: 100%; 
+  height: auto;
+  max-width: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  text-align: center;
+  background-color: #c0c0c0bb;
+}
+.primer_tit_subpag_principal{
+  color: #000000;
+}
+.hd_contactos{
+  background: url(../img/hd_contactenos.jfif) no-repeat center; /*no se repita la imagen */
+  background-size: cover; /*se adapte al 100*/
+  height: 65vh; /*el alto completo*/
+}
+.sc_contacto{
+  width: 100%;
+  height: 450px;
+}
+.div_contactos_proyectos{
+  width: 100%;
+  height: 300px;
+  padding: 0% 8% 0% 8%;
+  min-height: 300px;
+  margin-top: 15%;
+
+}
+.img_redes_sociales{
+  background-image: url(../img/rede-sociale.png);
+  background-size: cover; 
+  width: 45%;
+  height: 200px auto;
+  min-height: 100px;
+  float: left;
+}
+.img_form{
+  background-image: url(../img/img_contacto_formulario3.jpg);
+  float: right;
+  min-height: 100px;
+}
+/*Redes Sociales*/
+  .hd_redes_sociales{
+    background: url(../img/hd_redddes.png) no-repeat center;
+    background-size: cover; /*se adapte al 100*/
+    height: 85vh; /*el alto completo*/
+  }
+.seccion_redes_sociales{
+  width: 100%;
+  height: 800px;
+  background-color: #000000;
+}
+.div_subt_redes{
+  width: 100%;
+  height: 27%;
+  border-bottom: 1px #c0c0c0;
+  border-style: solid;
+  margin-bottom: 1px;
+}
+.img_redes{
+  background-image: url(../img/logo_f_blanco.png) ;
+  width: 10.7%;
+  height: 150px;
+  background-repeat: no-repeat;
+  margin:4% 0 0 31% ;
+  float: left;
+  min-height: 10vh; /*el alto completo*/  
+}
+.img_ig{
+  background-image: url(../img/Logo_insta_blanco.png) ;
+}
+.img_lnk{
+  background-image: url(../img/logo_in_blanco.png) ;
+}
+.div_redes_sociales_unidad{
+  margin-left: 0;
+  margin-top: 1%;
+}
+.contenido_redes_sociales{
+  margin-top: 1%;
+}
+.btn_redes{
+  margin: 0 0 0 3.5%;
+}
+.correo_tel_div{
+  padding: 3.3vmax;
+  margin: 0 40%;
+  border: none;
+}
+.corr_tel{
+  font-size: 23px;
+}
+.tel_tel{
+  font-size: 23px;
+  margin-left: 23px;
+}
+/*Formulario*/
+.formulario_seccion{
+  width: 100%;
+  height: 600px;
+  background-color: #000000;
+  }
+  .hd_forms{
+    background-image: none;
+    background-color: #605e5c;
+    max-height: 10vh;
+  }
+  .div_form{
+    width:100%;
+    padding: 2% 20%;
+  }
+  .form-group{
+    color: #e2e2e2;
+  }
+  .div_btn_type{
+    width: 100%;
+    padding: 2% 30%;
+    margin-left: 6%;
+  }
 
 /*Responsive de tableta*/
 @media all and (min-width: 750px) and (max-width: 1007px){
@@ -792,6 +919,7 @@ nav div ul li a:before{
   }
   .sec_footer {
     height: auto;
+    background-color: #000000;
   }
   .div_centro_footer {
     height: auto;
