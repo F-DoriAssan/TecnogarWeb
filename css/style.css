@@ -183,6 +183,7 @@ nav div ul li a:before{
     margin-left: 62%;
     display: none;
     float: right;
+    cursor: context-menu;
     }
     .BTN1{
       font-size: 37px;
@@ -448,15 +449,16 @@ nav div ul li a:before{
 
   }
   .div_img_proyectos{
-    background-image: url(../img/img_proyectos_1.jfif);
+    background-image: url(../img/casa_disenos_cocina.jpg);
     background-size: cover; 
     width: 45%;
     height: 400px auto;
     min-height: 400px;
     float: left;
+    margin-bottom: 2%;
   }
   .img_segunda{
-    background-image: url(../img/img_proyectos_2.jfif);
+    background-image: url(../img/casa_disenos_sala2.jpg);
     float: right;
   }
   .btn_img_proyectos{
@@ -464,6 +466,7 @@ nav div ul li a:before{
     padding: 5% 1% 1% 1%;
     margin-top: 55%;
     position: relative;
+    color: #000000;
   }
 
 /*Cuerta seccion "Procedimiento de trabajo*/
@@ -702,6 +705,9 @@ nav div ul li a:before{
   margin-top: 15%;
 
 }
+.btn_redes_proyect{
+  color: #ac8854;
+}
 .img_redes_sociales{
   background-image: url(../img/rede-sociale.png);
   background-size: cover; 
@@ -711,7 +717,7 @@ nav div ul li a:before{
   float: left;
 }
 .img_form{
-  background-image: url(../img/img_contacto_formulario3.jpg);
+  background-image: url(../img/formulario-contacto-9.png);
   float: right;
   min-height: 100px;
 }
@@ -795,7 +801,7 @@ nav div ul li a:before{
   }
 
 /*Responsive de tableta*/
-@media all and (min-width: 750px) and (max-width: 1007px){
+@media all and (min-width: 750px) and (max-width: 1050px){
   body{
     min-height: 100%;
   }
@@ -849,7 +855,7 @@ nav div ul li a:before{
   height: 580px;
 }
 .segunda_seccion{
-  height: 870px;
+  height: auto;
 }
 .tercera_seccion{
   height: 700px;
@@ -917,6 +923,9 @@ nav div ul li a:before{
     width: 100%;
     margin-top: 10% 0% 5% 0%;
   }
+  .div_img_proyectos{
+    margin-bottom: 0;
+  }
   .sec_footer {
     height: auto;
     background-color: #000000;
@@ -937,7 +946,7 @@ nav div ul li a:before{
     padding-right: 4.3% auto;
   }
 }
-@media all and (min-width: 1011px) and (min-height: 700px){
+@media all and (min-width: 1051px) and (min-height: 700px){
   body{
     min-height: 100%;
   }
@@ -1009,7 +1018,7 @@ nav div ul li a:before{
   height: 780px ;
 }
 .tercera_seccion{
-  height: 900px ;
+  height: auto ;
 }
 .cuarta_seccion{
   height: 786px auto;
@@ -1072,6 +1081,9 @@ nav div ul li a:before{
   .btn_tarjetas{
     width: 100%;
     margin-top: 10% 0% 5% 0%;
+  }
+    .div_img_proyectos{
+    margin-bottom: 0;
   }
 }
 @media all and (min-width: 1380px){
@@ -1241,7 +1253,7 @@ ul{
     height: auto ;
   }
   .tercera_seccion{
-    height: auto ;
+    height: 1200px ;
   }
   .cuarta_seccion{
     height: auto ;

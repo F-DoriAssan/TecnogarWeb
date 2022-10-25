@@ -6,8 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TecnoHogar Contacto</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <link href="../ext/bootstrap.min.css" rel="stylesheet" media="screen">
+
+    <script src="../ext/popper.min.js"></script>
+    <script src="../ext/bootstrap.min.js"></script>
+    <script src="../ext/jquery-3.6.1.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Icono de pestaña-->
@@ -22,7 +26,8 @@
 
 
 <body>
-    
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
         <nav id="navbar">
             <a href="../index.html" class="enlace">
                 <img src="../img/logo_nav_1_gris.png" alt="loco_nav" class="logo_nav">
@@ -77,6 +82,7 @@
         </nav>
         <header class="header hd_contactos">
     </header>
+    <div id="primero">
         <div class="div_primer_titulo tit_principal_subpag">
         <p class="primer_titulo primer_tit_subpag_principal">
             UBICACION
@@ -88,7 +94,7 @@
             <a href="../subPaginas/redessociales.html" target="_blank">
                 <div class="div_img_proyectos img_redes_sociales">
                     <div>
-                        <p class="btn_img_proyectos">
+                        <p class="btn_img_proyectos btn_redes_proyect">
                             Redes sociales
                         </p>
                     </div>
@@ -97,7 +103,7 @@
             </a>
             <a href="../subPaginas/formulario.html" target="_blank">
                 <div class="div_img_proyectos img_form">
-                    <p class="btn_img_proyectos">
+                    <p class="btn_img_proyectos btn_redes_proyect">
                         Formulario de contacto
                     </p>
                 </div>
@@ -149,6 +155,69 @@
             </div>
         </section>
     </footer>
+    </div>
+
+    <div id="segundo" class="capa-completa">
+        <div id="div-contenido-bloqeo">
+            <div class="nav_celular">
+                <a href="index.html" class="enlace">
+                    <img src="img/logo_nav_1_gris.png" alt="loco_nav" class="logo_nav">
+                </a>
+
+                <i type="B1" onclick="funcionBTN1()" class="btn-close btn-close-white menu_celu BTN1"></i>
+            </div>
+
+
+            <li>
+                <a href="index.html" class="a_nav_celu">
+                    <div class="div_a_nav_celular">
+                        Inicio
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="subPaginas/proyectos.html" class="a_nav_celu">
+                    <div class="div_a_nav_celular">
+                        Proyectos
+                    </div>
+                </a>
+            </li>
+
+
+            <li>
+                <a tabindex="-1" class="a_nav_celu">
+                    <div class="div_a_nav_celular">
+                        Nosotros
+                    </div>
+                </a>
+            <li>
+                <a href="subPaginas/contacto.html" class="a_nav_celu">
+                    <div class="div_a_nav_celular">
+                        Contacto
+                    </div>
+                </a>
+            </li>
+            <div class="div_nav_redes_celu">
+                <nav class="nav_footer_celu">
+                    <ul class="ul_redes">
+                        <a class="a_redes" href="#">
+                            <div class="img_logo f"></div>
+                        </a>
+                    </ul>
+                    <ul class="ul_redes">
+                        <a class="a_redes" href="#">
+                            <div class="img_logo ig"></div>
+                        </a>
+                    </ul>
+                    <ul class="ul_redes">
+                        <a class="a_redes" href="#">
+                            <div class="img_logo in"></div>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>v
 </body>
 
 </html>
