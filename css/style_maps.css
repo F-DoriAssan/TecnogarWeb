@@ -1,0 +1,102 @@
+html,body{
+height: 100%;
+margin: 0;
+padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+h3{
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+}
+h4{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 17px;
+}
+#map{
+    height: 100%;
+  }
+
+  .sucursales__lista{
+    position: absolute;
+    top: 5vh;
+    left: 5vh;
+    bottom: 15vh;
+    width: fit-content;
+    border: 2px solid black;
+    z-index: 5;
+    color: white;
+    background-color: #333;
+    opacity: 0.8;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .sucursales__lista > h3 {
+    text-align: center;
+    padding: 2rem;
+    border-bottom: 3px solid lightblue;
+  }
+
+  .sucursales__nombres{
+    flex: 1;
+    padding: 2rem;
+    cursor: pointer;
+  }
+
+  .window{
+    height: fit-content;
+    width: fit-content;
+    background-color: #333;
+    color: white;
+    padding: 0 2rem;
+    opacity: 0.8;
+  }
+
+  .window > h2{
+    border-bottom: 3px solid lightblue !important;
+  }
+
+  .gm-style-iw-d{
+    overflow: hidden !important;
+  }
+
+  .gm-style-iw{
+    background: #333 !important;
+    opacity: 0.8 !important;
+    box-shadow: 0 2px 7px 7px rgba(0, 0, 0, 5) !important;
+  }
+
+  .address, .phone{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .address > i {
+    margin-right: 1rem;
+    color: tomato;
+  }
+
+  .phone > i {
+    margin-right: 1rem;
+    color: lightblue;
+  }
+
+  .gm-style-iw-tc::after{
+    background-color: rgb(0, 0, 0) !important;
+  }
+
+  .gm-ui-hover-effect{
+    background: #fff !important;
+    border-radius: 50% !important;
+  }
+
+  .gm-style-mtc{
+    display: none;
+  }

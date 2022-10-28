@@ -1,0 +1,51 @@
+let offices = [
+    {
+        name: "Sucursal Av. Cordoba (CABA)",
+        lat:-34.598945,
+        lng:-58.379851,
+        address:"Avenida Cordoba 913",
+        phone: "+54 11 11111111",
+    },
+    {
+        name: "Sucursal San Martin (CABA)",
+        lat:-34.607826,
+        lng:-58.373769,
+        address:"Diagonal Norte y San Martin",
+        phone: "+54 11 22222222",
+    },
+    {
+        name: "Sucursal aV. Corrientes (CABA)",
+        lat:-34.602952,
+        lng:-58.370758,
+        address:"Avenida Corrientes 399",
+        phone: "+54 11 33333333",
+    },    
+    {
+        name: "Sucursal Balcarce (CABA)",
+        lat:-34.611972,
+        lng:-58.370306,
+        address:"Balcarce 362",
+        phone: "+54 11 44444444",
+    },    
+    {
+        name: "Sucursal Av. Rivadavia (CABA)",
+        lat:-34.608237,
+        lng:-58.378958,
+        address:"Rivadavia 984",
+        phone: "+54 11 55555555",
+    },
+    {
+        name: "Sucursal Zona Palermo ",
+        lat:-34.583279,
+        lng:-58.402920,
+        address:"Gral. Las Heras 2957",
+        phone: "+54 11 66666666",
+    },
+    {
+        name: "Sucursal Zona Avellaneda",
+        lat:-34.661718,
+        lng:-58.365989,
+        address:"Avenida Mitre 639 (Avellaneda)",
+        phone: "+54 11 77777777",
+    },
+]
