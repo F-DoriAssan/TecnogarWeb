@@ -395,6 +395,16 @@ nav div ul li a:before {
   font-size: 16px;
 }
 
+.titulo_subtit_replica{
+  width: 100%;
+  padding: auto;
+  text-align: center;
+}
+.subtit_replica{
+  width: fit-content;
+  margin: 5% 27%;
+}
+
 /*SECCIONES*/
 .primera_seccion {
   width: 100%;
@@ -420,10 +430,19 @@ nav div ul li a:before {
   width: 100%;
   height: 400px;
 }
+
 .condiciones_servicios{
   height: auto;
 }
 
+.quienessomos_seccion{
+  width: 100%;
+  height: auto;
+}
+
+.section_procedimiento_quienesSomos{
+  height: 500px;
+}
 /*Primera seccion "Pasion y enfoque"*/
 .div_img_primer_titulo_contenido {
   width: 100%;
@@ -577,10 +596,10 @@ nav div ul li a:before {
 
 /*Cuerta seccion "Procedimiento de trabajo*/
 .div_procedimientos_trabajos {
-  width: 100%;
-  height: 452px;
-  padding: 0% 10% 2% 8%;
-  margin-left: 2%;
+    width: 91%;
+    height: 452px;
+    padding: 0% 0% 2% 0%;
+    margin-left: 7%;
 }
 
 .div_primer_procedimiento_trabajo {
@@ -833,6 +852,39 @@ nav div ul li a:before {
 .condiciones_marca {
   margin-right: 2%;
 }
+/*Quienes somos*/
+.tit_quienessomos{
+  margin-top: 50px;
+}
+
+.div_video_quienessomos{
+  width: 100%;
+  height: 300px auto;
+  max-height: 500px;
+  min-height: 300px;
+}
+
+.video_quienessomos{
+  width: 93%;
+  height: 300px auto;
+  max-height: 500px;
+  min-height: 300px;
+  margin-left: 27px;
+  margin-right: 27px;
+  
+}
+
+.div_btn_replica{
+  width: 33.33%;
+  height: fit-content;
+  
+}
+.btn_quienes{
+  width: 210px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+  margin-left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+}
 
 /*Condiciones y Privacidad*/
 .div_condiciones_servicios{
@@ -908,7 +960,7 @@ nav div ul li a:before {
 
 /*Ubicacion*/
 /*Redes Sociales*/
-.hd_redes_sociales {
+.hd_redes_sopxciales {
   background: url(../img/hd_redddes.png) no-repeat center;
   background-size: cover;
   /*se adapte al 100*/
@@ -1029,7 +1081,6 @@ nav div ul li a:before {
     margin-left: 27px;
     margin-right: 27px;
   }
-
   /*Nav*/
   .enlace {
     padding: 20px 10px;
@@ -1544,10 +1595,6 @@ nav div ul li a:before {
     margin-bottom: 15%;
   }
 
-  .btn_principal {
-    margin: 2px;
-  }
-
   .div_segundo_titulo {
     font-size: 45px;
     letter-spacing: 2px;
@@ -1622,7 +1669,6 @@ nav div ul li a:before {
   .div_btn_type{
     padding: 1% 1%;
   }
-
   /*Secciones*/
   .primera_seccion {
     height: auto;
@@ -1678,9 +1724,7 @@ nav div ul li a:before {
     font-size: 18px;
     padding: 5px 3px;
   }
-  .btn_principal{
-    display: none;
-  }
+
   .tarjeta {
     width: 90%;
     height: auto;
