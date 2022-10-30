@@ -48,15 +48,7 @@ section {
   background-color: #000000;
 }
 
-/*Header*/
-.header {
-  background: url(../img/portada1.jfif) no-repeat center;
-  /*no se repita la imagen */
-  background-size: cover;
-  /*se adapte al 100*/
-  height: 100vh;
-  /*el alto completo*/
-}
+/*Header y navbar*/
 
 .header .navbar {
   background-color: rgba(34, 33, 33, 0.541) !important;
@@ -67,7 +59,7 @@ section {
 
 /*Estilo y trancisiones del nav*/
 #navbar {
-  background: rgba(61, 60, 60, 0.776) !important;
+  background: rgba(61, 60, 60, 0.97) !important;
   width: 100%;
   height: 80px;
 }
@@ -136,7 +128,7 @@ nav li a:hover {
 ul ul {
   position: absolute;
   min-width: 100px;
-  background-color: rgba(34, 33, 33, 0.541) !important;
+  background-color: rgba(63, 61, 61, 0.924) !important;
   display: none;
 }
 
@@ -312,8 +304,157 @@ nav div ul li a:before {
   margin: 0 23%;
 }
 
-/* Boton principal */
+/*Header*/
+.hd_index {
+  background: url(../img/header/hd_index.jfif) no-repeat center;
+  /*no se repita la imagen */
+  background-size: cover;
+  /*se adapte al 100*/
+  height: 100vh;
+  /*el alto completo*/
+}
 
+.hd_proyectos {
+  background: url(../img/header/hd_proyectos.jpg) no-repeat center;
+  background-size: cover;
+  /*se adapte al 100*/
+  height: 88vh;
+  /*el alto completo*/
+}
+
+.hd_cocinas {
+  background: url(../img/header/hd_proyectos_cocinas.jpg) no-repeat center;
+  background-size: cover;
+  /*se adapte al 100*/
+  height: 75vh;
+  /*el alto completo*/
+}
+
+.hd_quienes_somos {
+  background: url(../img/header/hd_quienes_somos.jpg) no-repeat center;
+  background-size: cover;
+  /*se adapte al 100*/
+  height: 88vh;
+  /*el alto completo*/
+}
+
+.hd_contactos {
+  background: url(../img/header/hd_contactos_.jpg) no-repeat center;
+  /*no se repita la imagen */
+  background-size: cover;
+  /*se adapte al 100*/
+  height: 88vh;
+  /*el alto completo*/
+}
+
+/*Secciones*/
+.primera_seccion {
+  width: 100%;
+  height: 652px;
+}
+
+.segunda_seccion {
+  width: 100%;
+  height: 940px;
+}
+
+.tercera_seccion {
+  width: 100%;
+  height: 650px;
+}
+
+.cuarta_seccion {
+  width: 100%;
+  height: 786px;
+}
+
+.quinta_seccion {
+  width: 100%;
+  height: 400px;
+}
+
+.condiciones_servicios {
+  height: auto;
+}
+
+.quienessomos_seccion {
+  width: 100%;
+  height: auto;
+}
+
+.cuarta_seccion_quienes_somos {
+  width: 100%;
+  height: auto;
+}
+
+.section_procedimiento_quienesSomos {
+  height: 300px;
+}
+
+.proyectos_seccion{
+  width: 100%;
+  height: 1600px;
+}
+
+/*Tit y subtit principales*/
+.div_tit_subTit_principal {
+  width: 100%;
+  max-width: 80%;
+  height: auto;
+  padding: 0 2% 2% 15%;
+  margin-top: 60px;
+  margin: 0 2% 2% 15%;
+}
+
+.div_tit_pincipal {
+  width: 60%;
+  display: inline-block;
+  margin: 0px auto;
+}
+
+.tit_pincipal {
+  font-size: 30px;
+}
+
+.div_subTit_principal {
+  width: 60%;
+  display: inline-block;
+  margin: 0px auto;
+  padding-bottom: 0.3vmax;
+}
+
+.code_subTit {
+  font-family: 'Poppins', sans-serif;
+  color: #c0c0c0;
+  font-size: 16px;
+}
+
+.titulo_subtit_replica {
+  width: 100%;
+  padding: auto;
+  text-align: left;
+}
+
+.subtit_replica {
+  width: fit-content;
+  margin: 5% 27%;
+}
+
+.h4_subtit_replica{
+  color: #c0c0c085;
+}
+
+.h3_subtit_replica{
+  color: #73706d;
+}
+
+.tit_proyecto__{
+  margin-bottom: 50px;
+}
+
+
+
+/* Boton del boton */
 .btn_principal {
   background: rgba(102, 100, 100, 0.527) !important;
   /* color de fondo */
@@ -362,87 +503,20 @@ nav div ul li a:before {
   transition: all 0.35s;
 }
 
-/*Tit y subTit principales*/
-.div_tit_subTit_principal {
-  width: 100%;
-  max-width: 80%;
-  height: auto;
-  padding: 0 2% 2% 15%;
-  margin-top: 60px;
-  margin: 0 2% 2% 15%;
+.div_btn_replica {
+  width: 33.33%;
+  height: fit-content;
+
 }
 
-.div_tit_pincipal {
-  width: 60%;
-  display: inline-block;
-  margin: 0px auto;
+.btn_replica {
+  width: 210px;
+  /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+  margin-left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
 }
 
-.tit_pincipal {
-  font-size: 30px;
-}
-
-.div_subTit_principal {
-  width: 60%;
-  display: inline-block;
-  margin: 0px auto;
-  padding-bottom: 0.3vmax;
-}
-
-.code_subTit {
-  font-family: 'Poppins', sans-serif;
-  color: #c0c0c0;
-  font-size: 16px;
-}
-
-.titulo_subtit_replica{
-  width: 100%;
-  padding: auto;
-  text-align: center;
-}
-.subtit_replica{
-  width: fit-content;
-  margin: 5% 27%;
-}
-
-/*SECCIONES*/
-.primera_seccion {
-  width: 100%;
-  height: 652px;
-}
-
-.segunda_seccion {
-  width: 100%;
-  height: 940px;
-}
-
-.tercera_seccion {
-  width: 100%;
-  height: 650px;
-}
-
-.cuarta_seccion {
-  width: 100%;
-  height: 786px;
-}
-
-.quinta_seccion {
-  width: 100%;
-  height: 400px;
-}
-
-.condiciones_servicios{
-  height: auto;
-}
-
-.quienessomos_seccion{
-  width: 100%;
-  height: auto;
-}
-
-.section_procedimiento_quienesSomos{
-  height: 500px;
-}
 /*Primera seccion "Pasion y enfoque"*/
 .div_img_primer_titulo_contenido {
   width: 100%;
@@ -450,7 +524,7 @@ nav div ul li a:before {
 }
 
 .primer_img {
-  background-image: url(../img/img_contenido.jfif);
+  background-image: url(../img/varias/img_primera.jfif);
   width: 33.7%;
   height: 200px;
   background-size: cover;
@@ -572,7 +646,7 @@ nav div ul li a:before {
 }
 
 .div_img_proyectos {
-  background-image: url(../img/casa_disenos_cocina.jpg);
+  background-image: url(../img/cocinas/casa_diseno_cocina_proyectos.jpg);
   background-size: cover;
   width: 45%;
   height: 400px auto;
@@ -582,7 +656,7 @@ nav div ul li a:before {
 }
 
 .img_segunda {
-  background-image: url(../img/casa_disenos_sala2.jpg);
+  background-image: url(../img/salas/casa_diseno_sala_proyecto.jpg);
   float: right;
 }
 
@@ -592,14 +666,15 @@ nav div ul li a:before {
   margin-top: 30px;
   position: relative;
   color: #000000;
+  background-color: #605e5c;
 }
 
 /*Cuerta seccion "Procedimiento de trabajo*/
 .div_procedimientos_trabajos {
-    width: 91%;
-    height: 452px;
-    padding: 0% 0% 2% 0%;
-    margin-left: 7%;
+  width: 91%;
+  height: 452px;
+  padding: 0% 0% 2% 0%;
+  margin-left: 7%;
 }
 
 .div_primer_procedimiento_trabajo {
@@ -613,15 +688,15 @@ nav div ul li a:before {
 }
 
 .primer_procedimiento {
-  background-image: url(../img/img_intercambios_ideas_1.jpg);
+  background-image: url(../img/varias/img_intercambio_ideas.jpg);
 }
 
 .segundo_procedimiento {
-  background-image: url(../img/img_armado_presupuesto.jpg);
+  background-image: url(../img/varias/img_armado_presupuesto.jpg);
 }
 
 .tercer_procedimiento {
-  background-image: url(../img/img_remodelacion.jpg);
+  background-image: url(../img/varias/img_remodelacion.jpg);
 }
 
 .tit_procedimiento_trabajo {
@@ -680,7 +755,7 @@ nav div ul li a:before {
   }
 }
 
-/*FOOTER*/
+/*Footer*/
 .footer_abajo {
   height: 100%;
 }
@@ -743,7 +818,7 @@ nav div ul li a:before {
 }
 
 .img_footer {
-  background-image: url(../img/logo_navegador_gris.png);
+  background-image: url(../img/logos/logo_tecnohogar_gris_min.png);
   width: 78px;
   height: 82px;
   text-decoration: none;
@@ -754,7 +829,7 @@ nav div ul li a:before {
 }
 
 .img_footer:hover {
-  background-image: url(../img/logo_navegador_blanco.png)
+  background-image: url(../img/logos/logo_tecnohogar_blanco_min.png)
 }
 
 .nav_footer {
@@ -789,27 +864,27 @@ nav div ul li a:before {
 }
 
 .f {
-  background-image: url(../img/logo_f_.png);
+  background-image: url(../img/logos/logo_f_.png);
 }
 
 .ig {
-  background-image: url(../img/Logo_insta.png);
+  background-image: url(../img/logos/logo_insta.png);
 }
 
 .in {
-  background-image: url(../img/logo_in.png);
+  background-image: url(../img/logos/logo_in.png);
 }
 
 .f:hover {
-  background-image: url(../img/logo_f_blanco.png);
+  background-image: url(../img/logos/logo_f_blanco.png);
 }
 
 .ig:hover {
-  background-image: url(../img/Logo_insta_blanco.png);
+  background-image: url(../img/logos/logo_insta_blanco.png);
 }
 
 .in:hover {
-  background-image: url(../img/logo_in_blanco.png);
+  background-image: url(../img/logos/logo_in_blanco.png);
 }
 
 /*Bajo footer*/
@@ -852,51 +927,102 @@ nav div ul li a:before {
 .condiciones_marca {
   margin-right: 2%;
 }
+
+/*PROYECTOS*/
+.div_proyec_proyec{
+  height: auto;
+}
+
+.img_tercera_proy{
+  background-image: url(../img/dormitorio/casa_diseño_dormitorio.jfif);
+}
+
+.img_cuarta_proy{
+  background-image: url(../img/banos/casa_disenos_bano.jpg);
+}
+
+.img_quinta_proy{
+  background-image: url(../img/escalera/casa_disenos_escalera.jpg);
+}
+
+.img_sexta_proy{
+  background-image: url(../img/jardines/casa_diseño_patio_jardin.jpg);
+}
+
+/*Subpaginas-proyectos*/
+
+/*Cocina*/
+
+
 /*Quienes somos*/
-.tit_quienessomos{
+
+.tit_quienessomos {
   margin-top: 50px;
 }
 
-.div_video_quienessomos{
+.div_video_quienessomos {
   width: 100%;
   height: 300px auto;
   max-height: 500px;
   min-height: 300px;
 }
 
-.video_quienessomos{
+.video_quienessomos {
   width: 93%;
   height: 300px auto;
   max-height: 500px;
   min-height: 300px;
   margin-left: 27px;
   margin-right: 27px;
-  
+
 }
 
-.div_btn_replica{
-  width: 33.33%;
-  height: fit-content;
-  
+.div_proc_quienes_somos {
+  margin-bottom: 1%;
 }
-.btn_quienes{
-  width: 210px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
-  margin-left: 50%;
-  transform: translateX(-50%);
-  height: 50px;
+
+.tit_prop_quienes_somos {
+  width: fit-content;
+  margin: 5% 15%;
+  text-align: center;
+}
+
+.tit_procedimiento_h3 {
+  font-size: 21px;
+}
+
+.tit_procedimiento_h3_seg {
+  font-size: 18px;
+}
+
+.procedimiento_quienes_somos {
+  background-color: #000000;
+}
+
+.contenido_prop_quienes_somos {
+  font-size: 20px;
+  background-color: #000000;
+  color: #949494;
+}
+
+.btn_quienes {
+  margin-left: 35%;
 }
 
 /*Condiciones y Privacidad*/
-.div_condiciones_servicios{
-  width:fit-content;
+.div_condiciones_servicios {
+  width: fit-content;
   height: auto;
   margin: 5% 3%;
 }
-.a_enlaces_priv{
+
+.a_enlaces_priv {
   color: #949494;
 }
+
 /*CONTACTOS*/
 /*Tit sub-pag*/
+
 .tit_principal_subpag {
   width: 100%;
   height: auto;
@@ -904,25 +1030,11 @@ nav div ul li a:before {
   margin-top: 0;
   margin-left: 0;
   text-align: center;
-  background-color: #c0c0c0bb;
+  background-color: rgba(61, 60, 60, 0.934);
 }
 
 .primer_tit_subpag_principal {
-  color: #000000;
-}
-
-.hd_contactos {
-  background: url(../img/hd_contactenos.jfif) no-repeat center;
-  /*no se repita la imagen */
-  background-size: cover;
-  /*se adapte al 100*/
-  height: 65vh;
-  /*el alto completo*/
-}
-
-.sc_contacto {
-  width: 100%;
-  height: auto;
+  color: #e2e2e2;
 }
 
 .div_formulario_redessocialies {
@@ -933,8 +1045,8 @@ nav div ul li a:before {
   margin-top: 2%;
 }
 
-.img_redessociales_form{
-  background-size: cover; 
+.img_redessociales_form {
+  background-size: cover;
   width: 45%;
   min-width: 45%;
   height: 600px auto;
@@ -943,22 +1055,49 @@ nav div ul li a:before {
 }
 
 .img_redes_sociales {
-  background-image: url(../img/img_redes_sociales.png);
+  background-image: url(../img/varias/img_contacto_redes_sociales.png);
   float: left;
+  text-align: center;
 }
 
 .img_form {
-  background-image: url(../img/formulario-contacto-9.png);
+  background-image: url(../img/varias/formulario-contacto.png);
   float: right;
+  text-align: center;
 }
+
 .btn_redes_proyect {
   font-size: 26px;
   padding: 5% 1% 1% 1%;
   margin-top: 55%;
   position: relative;
 }
+.sucursales_div {
+  width: 70%;
+  height:auto;
+  display: table;
+  margin-left: 17%;
+  margin-bottom: 50px;
+
+}
+
+.p_sucursales{
+font-size: 25px;
+margin: 100% 5%;
+}
+.sucursales_div img {
+  width: 700px;
+  height: auto;
+  }
+  
+  .a_sucursales{
+   display: table-cell;
+  vertical-align: middle;
+  text-align:center;
+  }
 
 /*Ubicacion*/
+
 /*Redes Sociales*/
 .hd_redes_sopxciales {
   background: url(../img/hd_redddes.png) no-repeat center;
@@ -1042,19 +1181,22 @@ nav div ul li a:before {
   margin: 0 0px;
   max-height: 10vh;
 }
-.tit_principal_subpag{
-  width: 100%; 
+
+.tit_principal_subpag {
+  width: 100%;
   height: 80px;
   display: inline-block;
   justify-content: center;
   white-space: break-word;
   padding: 0 27px;
 }
-.primer_tit_subpag_principal{
+
+.primer_tit_subpag_principal {
   font-size: 37px;
   text-align: center;
   margin: 20px 27px 15px 27px;
-}  
+}
+
 .div_form {
   width: 100%;
   padding: 2% 20%;
@@ -1081,6 +1223,7 @@ nav div ul li a:before {
     margin-left: 27px;
     margin-right: 27px;
   }
+
   /*Nav*/
   .enlace {
     padding: 20px 10px;
@@ -1239,7 +1382,8 @@ nav div ul li a:before {
     margin-right: 0;
     height: 350px;
   }
-    .contenedor_instagram {
+
+  .contenedor_instagram {
     width: 95%;
     height: auto;
     margin-left: 5%;
@@ -1274,9 +1418,10 @@ nav div ul li a:before {
   .div_correo_tel {
     padding-right: 4.3% auto;
   }
+
   /*Formulario*/
 
-  .div_btn_type{
+  .div_btn_type {
     padding: 2% 3%;
   }
 }
@@ -1537,6 +1682,7 @@ nav div ul li a:before {
   .menu_BTN1 {
     display: block;
   }
+
   .div_procedimientos_trabajos {
     width: 95%;
     height: 1100px;
@@ -1549,6 +1695,7 @@ nav div ul li a:before {
     margin-right: 0;
     height: 350px;
   }
+
   .nav_footer_celu {
     padding: 0 30% auto;
   }
@@ -1619,13 +1766,16 @@ nav div ul li a:before {
   .div_proyectos {
     margin-bottom: 9%;
   }
+
   .div_img_proyectos {
     width: 95%;
     margin-bottom: 50px;
   }
-  .div_img_instagram{
+
+  .div_img_instagram {
     width: 95%;
   }
+
   .contenido_procedimiento_trabajo {
     font-size: 20px;
   }
@@ -1665,10 +1815,12 @@ nav div ul li a:before {
   .div_correo_tel {
     padding-right: 3%;
   }
+
   /*Formulario*/
-  .div_btn_type{
+  .div_btn_type {
     padding: 1% 1%;
   }
+
   /*Secciones*/
   .primera_seccion {
     height: auto;
@@ -1689,19 +1841,24 @@ nav div ul li a:before {
   .quinta_seccion {
     height: auto;
   }
+  .proyectos_seccion {
+    height: 3000px;
+}
 }
 
 @media all and (max-width: 700px) {
   .div_nav_redes_celu {
     margin: 0 22%;
   }
+
   .div_img_proyectos {
     width: 100%;
     margin-bottom: 20px;
-}
+  }
+
   .nav_footer {
     padding: 0 18%;
-}
+  }
 }
 
 @media all and (max-width: 630px) {
@@ -1720,6 +1877,7 @@ nav div ul li a:before {
   .BTN1 {
     padding: 4% 4%;
   }
+
   .btn_portada_celular {
     font-size: 18px;
     padding: 5px 3px;
@@ -1728,20 +1886,23 @@ nav div ul li a:before {
   .tarjeta {
     width: 90%;
     height: auto;
-}
-.div_img_proyectos{
-  margin-bottom: 2%;
-}
-.contenedor_instagram {
-  height: auto;
-  margin-left: 6%;
-}
+  }
 
-.img_instagram {
-  width: 45%;
-  margin-bottom: 50px;
-  margin-right: 5%;
-}
+  .div_img_proyectos {
+    margin-bottom: 2%;
+  }
+
+  .contenedor_instagram {
+    height: auto;
+    margin-left: 6%;
+  }
+
+  .img_instagram {
+    width: 45%;
+    margin-bottom: 50px;
+    margin-right: 5%;
+  }
+
   .nav_footer {
     padding: 0 16%;
   }
@@ -1756,24 +1917,29 @@ nav div ul li a:before {
     margin-left: 32%;
     font-size: 20px;
   }
+
   .primer_img {
     width: 89%;
   }
-  .mas_informacion{
+
+  .mas_informacion {
     width: 100%;
     margin-right: 4%;
     background-color: #605e5c;
   }
+
   .div_img_proyectos {
     width: 100%;
     margin-bottom: 50px;
-}
-  .div_img_proyectos{
+  }
+
+  .div_img_proyectos {
     margin-bottom: 2%;
   }
+
   .nav_footer {
     padding: 0 14%;
-}
+  }
 }
 
 @media all and (max-width: 479px) {
@@ -1794,43 +1960,52 @@ nav div ul li a:before {
     padding: 7% 4%;
     font-size: 27px;
   }
+
   .nav_footer {
     padding: 0 10%;
-}
+  }
 }
 
 @media all and (max-width: 428px) {
   .tercera_seccion {
     height: 1200px;
-}
-.primer_img {
-  width: 87%;
-}
+  }
+
+  .primer_img {
+    width: 87%;
+  }
+
   .div_nav_redes_celu {
     margin: 1% 9%;
   }
+
   .nav_footer {
     padding: 0 5%;
+  }
 }
-}
+
 @media all and (max-width: 360px) {
   .primer_img {
     width: 85%;
   }
+
   .div_nav_redes_celu {
     margin: 1% 6%;
   }
+
   .div_centro_footer {
     padding: 0 15%;
-}
-.div_correo_tel {
-  padding-right: 0;
-  padding-left: 13%;
-}
+  }
+
+  .div_correo_tel {
+    padding-right: 0;
+    padding-left: 13%;
+  }
+
   .nav_footer {
     padding: 0;
     margin-left: 0;
-}
+  }
 }
 
 @media all and (max-width: 700px) and (max-height: 900px) {
