@@ -342,6 +342,37 @@ nav div ul li a:before {
   /*el alto completo*/
 }
 
+.hd_jardin{
+  background: url(../img/header/hd_jardin.jpg) no-repeat center;
+  background-size: cover;
+  /*se adapte al 100*/
+  height: 75vh;
+  /*el alto completo*/
+}
+
+.hd_habitacion{
+  background: url(../img/header/hd_dormitorio.jpg) no-repeat center;
+  background-size: cover;
+  /*se adapte al 100*/
+  height: 75vh;
+  /*el alto completo*/
+}
+
+.hd_escalera{
+  background: url(../img/header/hd_escalera.png) no-repeat center;
+  background-size: cover;
+  /*se adapte al 100*/
+  height: 75vh;
+  /*el alto completo*/
+}
+
+.hd_bano{
+  background: url(../img/header/hd_bano.jpg) no-repeat center;
+  background-size: cover;
+  /*se adapte al 100*/
+  height: 75vh;
+  /*el alto completo*/
+}
 .hd_quienes_somos {
   background: url(../img/header/hd_quienes_somos.jpg) no-repeat center;
   background-size: cover;
