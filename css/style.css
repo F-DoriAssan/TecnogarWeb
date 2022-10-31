@@ -125,6 +125,10 @@ nav li a:hover {
   color: #ffffff;
 }
 
+.nav li a .active {
+  color: #ffffff;
+}
+
 ul ul {
   position: absolute;
   min-width: 100px;
@@ -330,6 +334,14 @@ nav div ul li a:before {
   /*el alto completo*/
 }
 
+.hd_salas{
+  background: url(../img/header/hd_salas.jpg) no-repeat center;
+  background-size: cover;
+  /*se adapte al 100*/
+  height: 75vh;
+  /*el alto completo*/
+}
+
 .hd_quienes_somos {
   background: url(../img/header/hd_quienes_somos.jpg) no-repeat center;
   background-size: cover;
@@ -348,6 +360,11 @@ nav div ul li a:before {
 }
 
 /*Secciones*/
+.btn_section {
+  width: 100%;
+  height: 100px;
+}
+
 .primera_seccion {
   width: 100%;
   height: 652px;
@@ -391,7 +408,7 @@ nav div ul li a:before {
   height: 300px;
 }
 
-.proyectos_seccion{
+.proyectos_seccion {
   width: 100%;
   height: 1600px;
 }
@@ -440,17 +457,18 @@ nav div ul li a:before {
   margin: 5% 27%;
 }
 
-.h4_subtit_replica{
-  color: #c0c0c085;
+.h4_subtit_replica {
+  color: #f2f2f2bb;
 }
 
-.h3_subtit_replica{
-  color: #73706d;
+.h3_subtit_replica {
+  color: #aaa9a9;
 }
 
-.tit_proyecto__{
+.tit_proyecto__ {
   margin-bottom: 50px;
 }
+
 
 
 
@@ -515,6 +533,10 @@ nav div ul li a:before {
   margin-left: 50%;
   transform: translateX(-50%);
   height: 50px;
+}
+
+.contrata_experto {
+  margin-top: 35vmax;
 }
 
 /*Primera seccion "Pasion y enfoque"*/
@@ -929,30 +951,32 @@ nav div ul li a:before {
 }
 
 /*PROYECTOS*/
-.div_proyec_proyec{
+.div_proyec_proyec {
   height: auto;
 }
 
-.img_tercera_proy{
+.img_tercera_proy {
   background-image: url(../img/dormitorio/casa_diseño_dormitorio.jfif);
 }
 
-.img_cuarta_proy{
+.img_cuarta_proy {
   background-image: url(../img/banos/casa_disenos_bano.jpg);
 }
 
-.img_quinta_proy{
+.img_quinta_proy {
   background-image: url(../img/escalera/casa_disenos_escalera.jpg);
 }
 
-.img_sexta_proy{
+.img_sexta_proy {
   background-image: url(../img/jardines/casa_diseño_patio_jardin.jpg);
 }
 
 /*Subpaginas-proyectos*/
 
 /*Cocina*/
-
+.tit_proyectos_unidad{
+  margin: 5% 222px;
+}
 
 /*Quienes somos*/
 
@@ -1072,29 +1096,31 @@ nav div ul li a:before {
   margin-top: 55%;
   position: relative;
 }
+
 .sucursales_div {
   width: 70%;
-  height:auto;
+  height: auto;
   display: table;
   margin-left: 17%;
   margin-bottom: 50px;
 
 }
 
-.p_sucursales{
-font-size: 25px;
-margin: 100% 5%;
+.p_sucursales {
+  font-size: 25px;
+  margin: 100% 5%;
 }
+
 .sucursales_div img {
   width: 700px;
   height: auto;
-  }
-  
-  .a_sucursales{
-   display: table-cell;
+}
+
+.a_sucursales {
+  display: table-cell;
   vertical-align: middle;
-  text-align:center;
-  }
+  text-align: center;
+}
 
 /*Ubicacion*/
 
@@ -1272,6 +1298,18 @@ margin: 100% 5%;
 
   .code_subTit {
     font-size: 20px;
+  }
+
+  .subtit_replica {
+    margin: 5% 27px;
+  }
+
+  .h4_subtit_replica {
+    font-size: 23px;
+  }
+
+  .h3_subtit_replica {
+    font-size: 17px;
   }
 
   /*Secciones*/
@@ -1671,8 +1709,24 @@ margin: 100% 5%;
     display: none;
   }
 
+  .subtit_replica {
+    margin: 5% 27px;
+  }
+
+  .h4_subtit_replica {
+    font-size: 23px;
+  }
+
+  .h3_subtit_replica {
+    font-size: 17px;
+  }
+
   .menu_celu {
     display: block;
+  }
+
+  .contrata_experto {
+    display: none;
   }
 
   .BTN1 {
@@ -1740,6 +1794,10 @@ margin: 100% 5%;
     margin-left: 37%;
     margin-top: 2%;
     margin-bottom: 15%;
+  }
+
+  .btn_principal {
+    margin: 0;
   }
 
   .div_segundo_titulo {
@@ -1823,7 +1881,7 @@ margin: 100% 5%;
 
   /*Secciones*/
   .primera_seccion {
-    height: auto;
+    height: 1300px;
   }
 
   .segunda_seccion {
@@ -1841,9 +1899,10 @@ margin: 100% 5%;
   .quinta_seccion {
     height: auto;
   }
+
   .proyectos_seccion {
-    height: 3000px;
-}
+    height: 2700px;
+  }
 }
 
 @media all and (max-width: 700px) {
@@ -1928,6 +1987,10 @@ margin: 100% 5%;
     background-color: #605e5c;
   }
 
+  .btn_principal {
+    margin: 0 15% 0 0;
+  }
+
   .div_img_proyectos {
     width: 100%;
     margin-bottom: 50px;
@@ -1964,6 +2027,10 @@ margin: 100% 5%;
   .nav_footer {
     padding: 0 10%;
   }
+
+  .btn_principal {
+    margin: 0 20% 0 0;
+  }
 }
 
 @media all and (max-width: 428px) {
@@ -1989,6 +2056,10 @@ margin: 100% 5%;
     width: 85%;
   }
 
+  .btn_principal {
+    margin: 0 25% 0 0;
+  }
+
   .div_nav_redes_celu {
     margin: 1% 6%;
   }
@@ -2006,6 +2077,8 @@ margin: 100% 5%;
     padding: 0;
     margin-left: 0;
   }
+
+
 }
 
 @media all and (max-width: 700px) and (max-height: 900px) {
