@@ -19,13 +19,13 @@ offices.forEach(office=>{
 document.getElementById("sucursales__nombres").innerHTML = officeHTML;
 }
 
-const creaMarcador = (coord,name, address, phone) =>{ //instacia del marcador
+const creaMarcador = (coord,name, address, phone) =>{ //instacia del marcador datos de cada sucursal
     let html = `
         <div class="window">
             <h2>${name}</h2>
             <div class="address">
                 <i class="fas fa-map-marker-alt fa-lg"></i>
-                <h3>${name}</h3>
+                <h3>${address}</h3>
             </div>
             <div class="phone">
                 <i class="fas fa-phone-alt fa-lg"></i>

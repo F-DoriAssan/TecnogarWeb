@@ -5,10 +5,35 @@
 
 /*ESTILO DEL BODY Y HTML*/
 body {
-  font-size: 16px;
+  font-size: auto;
   font-family: 'Raleway', sans-serif;
   background-color: #000000;
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10rem 1fr /*5rem*/ 5rem;
+  grid-template-areas:
+    "header"
+    "main"
+    /*"aside"*/
+    "footer";
+    grid-auto-rows: 100px;
+    gap: 0,3em;
+}
 
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside{
+  display: none;
+}
+footer {
+  grid-area: footer;
 }
 
 html {
@@ -334,7 +359,7 @@ nav div ul li a:before {
   /*el alto completo*/
 }
 
-.hd_salas{
+.hd_salas {
   background: url(../img/header/hd_salas.jpg) no-repeat center;
   background-size: cover;
   /*se adapte al 100*/
@@ -342,7 +367,7 @@ nav div ul li a:before {
   /*el alto completo*/
 }
 
-.hd_jardin{
+.hd_jardin {
   background: url(../img/header/hd_jardin.jpg) no-repeat center;
   background-size: cover;
   /*se adapte al 100*/
@@ -350,7 +375,7 @@ nav div ul li a:before {
   /*el alto completo*/
 }
 
-.hd_habitacion{
+.hd_habitacion {
   background: url(../img/header/hd_dormitorio.jpg) no-repeat center;
   background-size: cover;
   /*se adapte al 100*/
@@ -358,7 +383,7 @@ nav div ul li a:before {
   /*el alto completo*/
 }
 
-.hd_escalera{
+.hd_escalera {
   background: url(../img/header/hd_escalera.png) no-repeat center;
   background-size: cover;
   /*se adapte al 100*/
@@ -366,15 +391,32 @@ nav div ul li a:before {
   /*el alto completo*/
 }
 
-.hd_bano{
+.hd_bano {
   background: url(../img/header/hd_bano.jpg) no-repeat center;
   background-size: cover;
   /*se adapte al 100*/
   height: 75vh;
   /*el alto completo*/
 }
+
 .hd_quienes_somos {
   background: url(../img/header/hd_quienes_somos.jpg) no-repeat center;
+  background-size: cover;
+  /*se adapte al 100*/
+  height: 88vh;
+  /*el alto completo*/
+}
+
+.hd_nuestros_clientes {
+  background: url(../img/header/hd_nuestros_clientes.jpg) no-repeat center;
+  background-size: cover;
+  /*se adapte al 100*/
+  height: 88vh;
+  /*el alto completo*/
+}
+
+.hd_empresas {
+  background: url(../img/header/hd_empresas.jpg.crdownload) no-repeat center;
   background-size: cover;
   /*se adapte al 100*/
   height: 88vh;
@@ -390,6 +432,7 @@ nav div ul li a:before {
   /*el alto completo*/
 }
 
+
 /*Secciones*/
 .btn_section {
   width: 100%;
@@ -403,7 +446,7 @@ nav div ul li a:before {
 
 .segunda_seccion {
   width: 100%;
-  height: 940px;
+  height: auto;
 }
 
 .tercera_seccion {
@@ -413,12 +456,58 @@ nav div ul li a:before {
 
 .cuarta_seccion {
   width: 100%;
-  height: 786px;
+  height: 406px;
+  padding: 2%;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-evenly;
+  align-items: stretch;
+
+}
+
+/*Cuerta seccion "Procedimiento de trabajo*/
+.div_procedimientos_trabajos {
+  width: 91%;
+  padding: 0% 0% 2% 0%;
+
+}
+
+.div_procedimientos_trabajos {
+  width: 30.2%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.item1 {
+  background-image: url(../img/varias/img_intercambio_ideas.jpg);
+}
+
+.item2 {
+  background-image: url(../img/varias/img_armado_presupuesto.jpg);
+}
+
+
+.item3 {
+  background-image: url(../img/varias/img_remodelacion.jpg);
+}
+
+
+.tit_procedimiento_trabajo {
+  color: #080000;
+  background-color: #b3b3b3a4;
+  font-weight: bold;
+}
+
+.contenido_procedimiento_trabajo {
+  color: #0c0c0c;
+  background-color: #b3b3b3b4;
+  font-weight: bold;
 }
 
 .quinta_seccion {
   width: 100%;
-  height: 400px;
+  height: auto;
 }
 
 .condiciones_servicios {
@@ -449,7 +538,7 @@ nav div ul li a:before {
   width: 100%;
   max-width: 80%;
   height: auto;
-  padding: 0 2% 2% 15%;
+  padding: 4% 2% 2% 15%;
   margin-top: 60px;
   margin: 0 2% 2% 15%;
 }
@@ -499,9 +588,6 @@ nav div ul li a:before {
 .tit_proyecto__ {
   margin-bottom: 50px;
 }
-
-
-
 
 /* Boton del boton */
 .btn_principal {
@@ -722,47 +808,6 @@ nav div ul li a:before {
   background-color: #605e5c;
 }
 
-/*Cuerta seccion "Procedimiento de trabajo*/
-.div_procedimientos_trabajos {
-  width: 91%;
-  height: 452px;
-  padding: 0% 0% 2% 0%;
-  margin-left: 7%;
-}
-
-.div_primer_procedimiento_trabajo {
-  width: 30.2%;
-  height: 420px;
-  float: left;
-  margin-right: 3.1%;
-  display: block;
-  background-size: cover;
-  background-position: center;
-}
-
-.primer_procedimiento {
-  background-image: url(../img/varias/img_intercambio_ideas.jpg);
-}
-
-.segundo_procedimiento {
-  background-image: url(../img/varias/img_armado_presupuesto.jpg);
-}
-
-.tercer_procedimiento {
-  background-image: url(../img/varias/img_remodelacion.jpg);
-}
-
-.tit_procedimiento_trabajo {
-  color: #080000;
-  background-color: #b3b3b3a4;
-  font-weight: bold;
-}
-
-.contenido_procedimiento_trabajo {
-  color: #0c0c0c;
-  background-color: #b3b3b3b4;
-  font-weight: bold;
-}
 
 /*Quinta seccion "Cuenta instagram*/
 .tit_instagram {
@@ -810,7 +855,7 @@ nav div ul li a:before {
 
 /*Footer*/
 .footer_abajo {
-  height: 100%;
+  height: auto;
 }
 
 .sec_footer {
@@ -821,7 +866,7 @@ nav div ul li a:before {
 }
 
 .div_footer {
-  height: 100%;
+  height: auto;
   width: 100%;
   padding-top: 3.3vmax;
   padding-bottom: 3.3vmax;
@@ -1003,14 +1048,12 @@ nav div ul li a:before {
 }
 
 /*Subpaginas-proyectos*/
-
 /*Cocina*/
-.tit_proyectos_unidad{
+.tit_proyectos_unidad {
   margin: 5% 222px;
 }
 
 /*Quienes somos*/
-
 .tit_quienessomos {
   margin-top: 50px;
 }
@@ -1077,7 +1120,6 @@ nav div ul li a:before {
 
 /*CONTACTOS*/
 /*Tit sub-pag*/
-
 .tit_principal_subpag {
   width: 100%;
   height: auto;
@@ -1154,7 +1196,6 @@ nav div ul li a:before {
 }
 
 /*Ubicacion*/
-
 /*Redes Sociales*/
 .hd_redes_sopxciales {
   background: url(../img/hd_redddes.png) no-repeat center;
@@ -1179,7 +1220,7 @@ nav div ul li a:before {
 }
 
 .img_redes {
-  background-image: url(../img/logo_f_blanco.png);
+  background-image: url(../img/logos/logo_f_blanco.png);
   width: 10.7%;
   height: 150px;
   background-repeat: no-repeat;
@@ -1190,11 +1231,11 @@ nav div ul li a:before {
 }
 
 .img_ig {
-  background-image: url(../img/Logo_insta_blanco.png);
+  background-image: url(../img/logos/logo_insta_blanco.png);
 }
 
 .img_lnk {
-  background-image: url(../img/logo_in_blanco.png);
+  background-image: url(../img/logos/logo_in_blanco.png);
 }
 
 .div_redes_sociales_unidad {
@@ -1344,7 +1385,6 @@ nav div ul li a:before {
   }
 
   /*Secciones*/
-  /*SECCIONES*/
   .primera_seccion {
     height: 580px;
   }
@@ -1357,9 +1397,20 @@ nav div ul li a:before {
     height: 700px;
   }
 
-  .cuarta_seccion {
-    height: auto;
+  /* .cuarta_seccion {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  } */
 
+  .div_procedimientos_trabajos {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
   }
 
   .quinta_seccion {
@@ -1439,18 +1490,8 @@ nav div ul li a:before {
     margin-bottom: 0;
   }
 
-  .div_procedimientos_trabajos {
-    height: 1100px;
-    margin: 0 5%;
-    width: 95%;
-  }
 
-  .div_primer_procedimiento_trabajo {
-    width: 92.1%;
-    margin-bottom: 3.1%;
-    margin-right: 0;
-    height: 350px;
-  }
+
 
   .contenedor_instagram {
     width: 95%;
@@ -1586,11 +1627,6 @@ nav div ul li a:before {
     height: auto;
   }
 
-  .cuarta_seccion {
-    height: 786px auto;
-
-  }
-
   .quinta_seccion {
     height: 500px;
   }
@@ -1682,10 +1718,6 @@ nav div ul li a:before {
     height: 980px;
   }
 
-  .cuarta_seccion {
-    height: 786px;
-
-  }
 
   .quinta_seccion {
     height: 500px;
@@ -1705,10 +1737,6 @@ nav div ul li a:before {
     height: 1080px;
   }
 
-  .cuarta_seccion {
-    height: 856px;
-
-  }
 
   .quinta_seccion {
     height: 600px;
@@ -1768,11 +1796,7 @@ nav div ul li a:before {
     display: block;
   }
 
-  .div_procedimientos_trabajos {
-    width: 95%;
-    height: 1100px;
-    margin: 0 5%;
-  }
+
 
   .div_primer_procedimiento_trabajo {
     width: 99%;
@@ -1921,10 +1945,6 @@ nav div ul li a:before {
 
   .tercera_seccion {
     height: 1000px;
-  }
-
-  .cuarta_seccion {
-    height: auto;
   }
 
   .quinta_seccion {
