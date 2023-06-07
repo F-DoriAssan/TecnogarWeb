@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+html{
+    font-size: 62.5%;
+    color: #e2e2e2;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hd-productos {
+    background: url(../img/header/hd_index.jfif) no-repeat center;
+}
+

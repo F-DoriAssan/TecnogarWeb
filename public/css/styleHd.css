@@ -1,0 +1,9 @@
+.hd{
+    color: black;
+    /*no se repita la imagen */
+    background-size: cover;
+    /*se adapte al 100*/
+    height: calc(100vh - 80px);
+    /*el alto completo*/
+    background-position: center center;
+}

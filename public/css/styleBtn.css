@@ -1,0 +1,68 @@
+.btn_principal {
+    background: rgba(102, 100, 100, 0.527) !important;
+    /* color de fondo */
+    color: #e2e2e2 !important;
+    /* color de fuente */
+    border: 2px solid #0000008f !important;
+    /* tamaño y color de borde */
+    padding: 16px 20px;
+    border-radius: 3px;
+    /* redondear bordes */
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+    margin: 6px 27px;
+    text-decoration: none;
+  }
+  
+  .btn_principal:hover {
+    color: #ffffff;
+    /* color de fuente hover */
+  }
+  
+  .btn_principal::after {
+    content: "";
+    background: #8686969c;
+    /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  
+  .btn_principal:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  
+  .div_btn_replica {
+    width: 33.33%;
+    height: fit-content;
+  
+  }
+  
+  .btn_replica {
+    width: auto;
+    min-width: auto;
+    /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+    margin-left: 5%;
+    height: 50px;
+  }
+  
+  .contrata_experto {
+   width: auto;
+   height: auto;
+   display: block;
+   color: antiquewhite;
+  }

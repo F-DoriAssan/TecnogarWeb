@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+  
+.tecnogar {
+    color: #e2e2e2;
+    text-decoration: none;
+    position: relative;
+    font-size: medium;
+    font-family: Verdana;
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+p{
+    font-size: 1.3em;
+}
+
+nav ul {
+    float: left;
+}
+  
+nav ul li {
+    line-height: 47px;
+    margin: 0 5px;
+    
+}
+
+nav li a {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #e2e2e2;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8em;
+}
+.nav-link {
+    display: block;
+    font-size: 1.8em !important;
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color 1.15s ease-in-out,background-color 1.15s ease-in-out,border-color 1.15s ease-in-out;
+}
+
+.dropdown-menu-dark {
+    --bs-dropdown-bg: #000000 !important;
+    width: min-content;
+
+}
+  
+  

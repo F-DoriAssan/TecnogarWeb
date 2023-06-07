@@ -1,0 +1,32 @@
+body {
+    font-size: auto;
+    font-family: 'Raleway', sans-serif;
+    background-color: #000000 !important;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100rem 1fr /*5rem*/ 5rem;
+    grid-template-areas:
+      "header"
+      "main"
+      /*"aside"*/
+      "footer";
+      grid-auto-rows: 100px;
+      gap: 0,3em;
+  }
+  
+  header {
+    grid-area: header;
+    height: min-content;
+  }
+  
+  main {
+    grid-area: main;
+  }
+  
+  aside{
+    display: none;
+  }
+  footer {
+    grid-area: footer;
+  }
